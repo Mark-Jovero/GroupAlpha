@@ -6,6 +6,7 @@ A website that sells a variety of boxes!
 ## NOTES
 
 - I will work on store.html
+- Link to view the website has changed to https://mark-jovero.github.io/GroupAlpha/
   
 ## TODO [due March 19]
 - finish websites/links
