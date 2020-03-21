@@ -11,6 +11,7 @@ A website that sells office supplies!
   - ~~Product art~~
   - Replace product art with something more "modern"
   - Replace iFrames with javascript, once prof. Bierman allows use of js
-  - *Add product page for each product*
+  - *Add product page for each product* (and remove some (or all) of the boxes)
   - Work on logo
   - Create social media accounts?
+  
