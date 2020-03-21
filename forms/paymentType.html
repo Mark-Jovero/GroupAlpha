@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<header>
+		<title>Payment</title>
+        <div class="headContainer" align="center">
+			<div class="loginContainer">
+				<table width="50%" align="right">
+					<tr>
+						<td></td>
+						<td height="25px" width="90px">
+							<a target="_parent" href="../forms/login.html">Login</a>
+						</td>
+						<td height="25px" width="90px">
+							<a target="_parent" href="../forms/login.html">Help</a>
+						</td>
+						<td align ="center" height="10" width = "60px">
+							<details class="shoppingCartPopUp">
+								<summary><img src="../images/icons8-shopping-cart-64.png" height ="30"width="30" alt="Cart"></summary>
+								<p> Your cart is empty.</p>
+								<form>
+									<button type="submit" formaction="../cart.html"> Checkout </button>
+								</form>
+							</details>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="navBar">
+				<iframe src="../frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe>
+			</div>
+		
+		</div>
+    </header>
+    <body><center>
+        <div class="paymentContainer">
+            <div class= "paymentOptions"></div>
+            <h1> Add Payment Type </h1>
+            <div class="form-payment">
+                <form action="/my-handling-form-page" method="post">
+                    <table style="width:40%">
+                        <tr>
+                            <th colspan="3"> <label for="Credit card number"></label>
+                                <input type="number" id="cc number" name="user_ccnumber" placeholder = "Credit Card Number"> </th>
+                        </tr>
+                        <tr>
+                            <th><label for="CVV"></label>
+                                <input type="number" id="CVV" name="user_CCV" placeholder = "CVV"> </th>
+                            <th><label for="Expiration Date"></label>
+                                <input type="date" id="Expiration" name="user_expiration" placeholder = "MM/YY"> </th>
+                            <th> <label for="Postal Code"></label>
+                                <input type="number" id="Postal" name="user_postal" placeholder = "Postal Code"> </th>
+                        </tr>
+                        <tr>
+                            <th colspan="3"> <button type = "submit">Add</button> </th>
+                    </table>
+                   </form>
+            </div>
+        </div>
+        <table height="500px"></table>
+    <center></body>
+        <footer>
+		
+            <div class="footerContainer">
+                
+                <iframe src="../frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+                
+            </div>
+            
+        </footer>
+</html>

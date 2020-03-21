@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<header>
+		<title>Login</title>
+    <div class="headContainer" align="center">
+			<div class="loginContainer">
+				<table width="50%" align="right">
+					<tr>
+						<td></td>
+						<td height="25px" width="90px">
+							<a target="_parent" href="../forms/login.html">Login</a>
+						</td>
+						<td height="25px" width="90px">
+							<a target="_parent" href="../faq.html">Help</a>
+						</td>
+						<td align ="center" height="10" width = "60px">
+							<details class="shoppingCartPopUp">
+								<summary><img src="../images/icons8-shopping-cart-64.png" height ="30"width="30" alt="Cart"></summary>
+								<p> Your cart is empty.</p>
+								<form>
+									<button type="submit" formaction="../cart.html"> Checkout </button>
+								</form>
+							</details>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="navBar">
+				<iframe src="../frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe>
+			</div>
+		
+		</div>
+    </header>
+    <body>
+      <center>
+        <table height="400px">
+          <tr>
+            <div class="loginContainer"
+            <div class= "signinOptions"></div>
+            <h1> Log In </h1>
+            <div class="form-login">
+                <form action="/my-handling-form-page" method="post">
+                    <p>
+                      <label for="mail"> E-mail:</label>
+                      <input type="email" id="mail" name="user_mail">
+                    </p>
+                    <p>
+                      <label for="pass">Password:</label>
+                      <input type="password" id="pass" name="user_password">
+                    </p>
+                    <p>
+                      <button type = "submit">Login</button>
+                      <label> <input type = "checkbox" checked= "checked" name="remember"> Remember me </label>
+                    </p>
+                     <p>
+                      <form>
+                        <button for="no account" formaction="signup.html">Don't have an account yet?</button>
+                      </form>
+                     </p>
+                   </form>
+            </div>
+        </div>
+          </tr>
+        </table>
+      </center>
+    </body>
+    <footer>
+      <div class="footerContainer">
+        <iframe src="../frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
+      </div>
+    </footer>
+
+</html>
