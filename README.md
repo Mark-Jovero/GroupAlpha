@@ -9,9 +9,8 @@ A website that sells a variety of boxes!
 - Link to view the website has changed to https://mark-jovero.github.io/GroupAlpha/
   
 ## TODO [due n/a]
-~~- finish websites/links~~
-
-~~- Product art~~
+  - ~~finish websites/links~~
+  - ~~Product art~~
   - Replace product art with something more "modern"
   - Replace iFrames with javascript, once prof. Bierman allows use of js
   - *Add product page for each product
