@@ -10,6 +10,7 @@ A website that sells a variety of boxes!
   
 ## TODO [due n/a]
 ~~- finish websites/links~~
+
 ~~- Product art~~
   - Replace product art with something more "modern"
   - Replace iFrames with javascript, once prof. Bierman allows use of js
