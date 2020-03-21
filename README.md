@@ -1,5 +1,5 @@
 # Group Alpha
-AUTHORS: JESSICA ZEPADA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
+AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
 
 A website that sells office supplies!
 
