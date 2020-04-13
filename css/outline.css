@@ -1,0 +1,15 @@
+/*This CSS file is connected to index.html */
+
+
+.footerContainer {
+	position: relative;
+	width:101vw;
+	bottom: -1vw;
+	margin-left: 0;
+	background-color: lightgray;
+	left: -1vw;
+}
+
+footer {
+	bottom: -1vw;
+}
