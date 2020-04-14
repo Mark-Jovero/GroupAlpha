@@ -1,137 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="html">
+<head>
+	<title>Home Page</title>
+	<link href="css/outline.css" rel="stylesheet" type="text/css">
+	<link href="css/cart.css" rel="stylesheet" type="text/css">
+	<link href="css/pageCSS/index.css" rel="stylesheet" type="text/css">
 
-	<header>
-		<title>Home</title>
-		<link href="css/outline.css" rel="stylesheet" type="text/css">
-		<div class="headContainer" align="center">
-			<div class="loginContainer">
-				<table width="50%" align="right">
-					<tr>
-						<td></td>
-						<td height="25px" width="90px">
-							<a target="_parent" href="forms/login.html">Login</a>
-						</td>
-						<td height="25px" width="90px">
-							<a target="_parent" href="faq.html">Help</a>
-						</td>
-						<td align ="center" height="10" width = "60px">
-							<details class="shoppingCartPopUp">
-								<summary><img src="images/icons8-shopping-cart-64.png" height ="30"width="30" alt="Cart"></summary>
-								<p> Your cart is empty.</p>
-								<form>
-									<button type="submit" formaction="cart.html"> Checkout </button>
-								</form>
-							</details>
-						</td>
-					</tr>
-				</table>
-			</div>
-			
-			<div class="navBar">
-				<iframe src="frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe>
-			</div>
+</head>
+<body>
+
+	<div class="container_grid">
 		
-		</div>
-	</header>
-	<hr width="90%">
-	<body>
-		<div class="bodyContainer" width="100%">
-			<table width="100%" bgcolor="lightgray" cellpadding="0">
-				<tr>
-					<td height="450px" width="90%" bgcolor="white" align="left" valign="top"><br>
-					<!-- STUFF FOR ARTICLE GO HERE! -->
-						<!--<div><table bgcolor="silver" width="100%"><tr><td align="center"><b>FEATURED PRODUCTS</b></td></tr></table></div>-->
-						<font size="6"><b>&nbsp;&nbsp;FEATURED PRODUCTS</b></font>
-						<iframe src="fp/featuredProduct1.html" height="100%" width ="100%" scrolling="no" align="left" frameborder="0"></iframe>
-					</td>
-					<td rowspan="2" bgcolor="white" valign="top">
-					<!-- STUFF FOR SIDE GO HERE! -->
-						<!--<div><table bgcolor="silver" width="100%"><tr><td align="center"><b>ADVERTISEMENT</b></td></tr></table></div>-->
-						<img src="images/ad1.png" width="100%" alt="A BannerSnack ad">
-						Used <a href="https://www.bannersnack.com">BannerSnack</a> to generate a fake ad.
+		<div class="top-right">
+			<div class="login"><a target="_parent" href="forms/login.html">Login</a></div>
+			<div class="help"><a target="_parent" href="faq.html">Help</a></div>
+			<div class="cart">
 					
-					</td>
-				</tr>
-				<tr>
-					<td height="30px" bgcolor = "white"valign="top">
-					<!-- STUFF FOR SECTION GO HERE! -->
-						<div>
-							<table cellpadding = "20" width="100%">
-								<tr>
-									<td align="left">
-										<font size="6"><b>TRENDING NOW</b></font>
-									</td>
-								</tr>
-								<tr>
-									<td align="left" width="33%">
-										<table  width="100%">
-											<tr>
-												<td align="center">
-													<a href="products/store.html">
-														<img src="images/black-notebook.jpg" width="100%">
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="products/store.html"><font size="4">Notebooks</font></a>
-												</td>
-											</tr>
-										</table>
-									</td>
-									<td align="left" width = "33%">
-										<table  width="100%">
-											<tr>
-												<td align="center">
-													<a href="products/store.html">
-														<img src="images/multicolored-markers.jpg" width="100%">
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="products/store.html"><font size="4">Markers</font></a>
-												</td>
-											</tr>
-										</table>
-									</td>
-									<td align="left" width = "33%">
-										<table  width="100%">
-											<tr>
-												<td align="center">
-													<a href="products/store.html">
-														<img src="images/paint-swatches.jpg" width="100%">
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="products/store.html"><font size="4">Paint Swatches</font></a>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</td>
-				</tr>
-			</table>
+					<img class="icon_hover" src="images/cart_hover.png" alt="Cart" width="27px">
+					<img class="icon_nohover" src="images/cart_NOhover.png" alt="nCart" width="27px" align="middle">
+					<div class="cart_content">
+						<br><span><b>Your Cart</b></span><br>
+						<hr>
+						<p><img class="item" src="products/items/markers.png"></p>
+						<p>Markers - 4.99</p>
+						<p><img class="item" src="products/items/premium_pencil_6.png"></p>
+						<p>Premium Pencils - 4.99</p>
+						<br><br>
+						<form>
+							<button type="submit" formaction="cart.html"> Checkout </button>
+						</form>
+					</div>
+					
+			</div>
 		</div>
+		
+		<div class="header"></div>
+		
+		<div class="menu"><iframe src="frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe></div>
 	
-	</body>
-	<br>
-	<hr width="90%">
-	<footer>
-		
-		<div class="footerContainer">
+		<div class="gap-left">&nbsp;<br></div><!--Dont put any content here please-->
+	
+		<div class="main">
+			<h1>FEATURED PRODUCTS</h1>
+			<iframe src="fp/featuredProduct1.html" height="100%" width ="100%" scrolling="no" align="left" frameborder="0"></iframe>
+			<h1>TRENDING NOW</h1>
+			<div class="trending">
 			
-			<iframe src="frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
-			
+				<div class="item1"><a href="products/store.html"><img src="images/multicolored-markers.jpg" width="500px" height="350px"></a><br>
+				<a href="products/store.html"><font size="4">Markers</font></a></div>
+				
+				<div class="item2"><a href="products/store.html"><img src="images/black-notebook.jpg" width="500px" height="350px"></a><br>
+				<a href="products/store.html"><font size="4">Notebooks</font></a></div>
+				
+				<div class="item3"><a href="products/store.html"><img src="images/paint-swatches.jpg" width="500px" height="350px"></a><br>
+				<a href="products/store.html"><font size="4">Paint Swatches</font></a></div>	
+				<br><br>
+			</div>
 		</div>
 		
-	</footer>
+		<div class="footer">
+		<br>
+			<iframe src="frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+		</div>
+		
+		
+		<div class="gap-right">&nbsp;<br></div><!--Dont put any content here please-->
+	
+	</div>
 
+</body>
 </html>
-
