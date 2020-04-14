@@ -29,11 +29,12 @@
 .header {
 	grid-area: header;
 	border-bottom: 1px solid var(--main-border-color);
-	background-color: #021463 !important;
+	background-color: #8288a1 !important;
 }
 
 .top-right {
 	grid-area: top-right;
+	background-color: #8288a1 !important;
 }
 
 .menu {

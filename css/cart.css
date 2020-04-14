@@ -7,7 +7,6 @@
 	border-bottom: 1px solid var(--main-border-color);
 	display: grid;
 	text-align: center;
-	background-color: #021463 !important;
 	grid-area: top-right;
 	grid-template-areas:
 	'login help cart cart';
