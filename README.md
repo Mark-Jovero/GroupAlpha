@@ -4,7 +4,7 @@ AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
 A website that sells office supplies!
 
 ## NOTES
-- ** Please look at the changes in the CSS Experimental branch. The index.html page has changed. Layout now uses a grid system. Let me know how you like it.
+- ** <b>Please look at the changes in the CSS Experimental branch.</b> The index.html page has changed. Layout now uses a grid system. Let me know how you like it.
 - Link to view the website has changed to **https://mark-jovero.github.io/GroupAlpha/**
 - Navbar and footer are in the frames folder. Both are implemented using <iframe> tag. In order to change a link, go to the frames folder and edit links there. This makes it easier to manage the website (ie, not having to go to each webpage to edit links).
 
