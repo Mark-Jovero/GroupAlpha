@@ -4,7 +4,7 @@
 }
 
 .top-right {
-	border-bottom: 1px solid var(--main-border-color);
+	position: fixed;
 	display: grid;
 	text-align: center;
 	grid-area: top-right;
@@ -13,6 +13,7 @@
 }
 
 .top-right > .login {
+	position: fixed;
 	font-weight: bold;
 	grid-area: login;
 	position: relative;
@@ -21,6 +22,7 @@
 }
 
 .top-right > .help {
+	position: fixed;
 	font-weight: bold;
 	grid-area: help;
 	position: relative;
@@ -77,6 +79,7 @@
 	border: 1px solid black;
 	border-top: 0;
 	z-index: 0;
+	width: 60%;
 }
 
 .top-right > .cart > .cart_content > p > .item {
@@ -84,9 +87,7 @@
 }
 
 .top-right > .cart:hover > .cart_content {
-	position: absolute;
 	display: block;
-	width: 15%;
 }
 
 .top-right > .login > a, .top-right > .help > a {

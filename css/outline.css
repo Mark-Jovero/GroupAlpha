@@ -27,13 +27,20 @@
 }
 
 .header {
+	position: fixed;
+	width: 100%;
+	height: 27px;
 	grid-area: header;
 	border-bottom: 1px solid var(--main-border-color);
 	background-color: #8288a1 !important;
 }
 
 .top-right {
+	position: fixed;
+	width: 20%;
+	right: 0px;
 	grid-area: top-right;
+	z-index: 100;
 	background-color: #8288a1 !important;
 }
 
