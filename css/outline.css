@@ -1,15 +1,68 @@
 /*This CSS file is connected to index.html */
-
-
-.footerContainer {
-	position: relative;
-	width:101vw;
-	bottom: -1vw;
-	margin-left: 0;
-	background-color: lightgray;
-	left: -1vw;
+:root { /*Store Variables Here*/
+	--main-border-color: lightblue;
+	--cart-bg-color: white;
 }
 
-footer {
-	bottom: -1vw;
+
+.container_grid {
+	display: grid;
+	grid-template-areas:
+	'header header header header header header header top-right top-right top-right top-right top-right'
+	'menu menu menu menu menu menu menu menu menu menu menu menu'
+	'gap-left gap-left gap-left gap-left main main main main gap-right gap-right gap-right gap-right '
+	'footer footer footer footer footer footer footer footer footer footer footer footer';
+	padding: 0px;
+	grid-gap: 0px;
+	position: absolute;
+	width: 100%;
+	max-height: 250px;
+	top: 0;
+	left: 0;
 }
+
+.container_grid > div {
+	padding: 5px;
+	background-color: white;
+}
+
+.header {
+	grid-area: header;
+	border-bottom: 1px solid var(--main-border-color);
+	background-color: #021463 !important;
+}
+
+.top-right {
+	grid-area: top-right;
+}
+
+.menu {
+	grid-area: menu;
+}
+
+.main {
+	grid-area: main;
+	display: grid;
+	min-height: 450px;
+	border-bottom: 1px solid var(--main-border-color);
+}
+
+.right {
+	grid-area: right;
+}
+
+.gap-right {
+	grid-area: gap-right;
+}
+
+.gap-left {
+	grid-area: gap-left;
+}
+
+.footer {
+	grid-area: footer;	
+	background-color: #8288a1 !important;
+	bottom: 0px;
+	min-height: 200px;
+}
+
