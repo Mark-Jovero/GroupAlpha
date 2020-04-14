@@ -3,6 +3,13 @@ AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
 
 A website that sells office supplies!
 
+## How to Use GENERIC.html
+- The GENERIC.html is in the root directory. The webpage is a template so it matches the whole website theme.
+- To create a webpage using the GENERIC.html template, create a copy of it and rename it to what ever webpage you want.
+- All contents should be written in the commented section within the html file: "<!-- CONTENTS GO HERE -->". It's the div whose class name is "content"
+- You can modify the css file by creating your own .css or by modifying the "pages.css" file located in the css/ folder.
+- Please don't forget to change the <title> tag!
+
 ## NOTES
 - ** The index.html page has changed. Layout now uses a grid system. Let me know how you like it.
 - Link to view the website has changed to **https://mark-jovero.github.io/GroupAlpha/**
