@@ -1,0 +1,23 @@
+.container_grid {
+	grid-template-areas:
+	'header header header header header header header top-right top-right top-right top-right top-right'
+	'menu menu menu menu menu menu menu menu menu menu menu menu'
+	'gap-left main main main main main main main main main main gap-right '
+	'footer footer footer footer footer footer footer footer footer footer footer footer' !important;
+}
+
+.main {
+	width: 100%;
+	background-color: red;
+	min-height: 1000px;
+	display: grid;
+	grid-template-columns: 15% 5% 80%;
+}
+
+.main > .fil {
+	
+}
+
+.main > .content {
+	
+}
