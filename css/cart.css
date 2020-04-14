@@ -59,6 +59,11 @@
 	background-color: var(--cart-bg-color);
 }
 
+.top-right > .cart:hover {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
 .top-right > .cart > .cart_content { /*default*/
 	position: absolute;
 	right: 1px;
