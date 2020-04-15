@@ -2,7 +2,7 @@
 	grid-template-areas:
 	'header header header header header header header top-right top-right top-right top-right top-right'
 	'menu menu menu menu menu menu menu menu menu menu menu menu'
-	'gap-left main main main main main main main main main main gap-right '
+	'main main main main main main main main main main main main '
 	'footer footer footer footer footer footer footer footer footer footer footer footer' !important;
 }
 
@@ -11,10 +11,32 @@
 	background-color: red;
 	min-height: 1000px;
 	display: grid;
-	grid-template-columns: auto 15%;
+	grid-template-columns: auto !important;
 }
 
 .main > .content {
 
+}
+
+.content > .cartInfo {
+	width: 100%;
+	text-align: center;
+}
+
+
+
+.sumInfo {
+	width: 100%;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.sumInfo td {
+	height: 35px;
+}
+
+.trending table {
+	width: 100%;
+	text-align: center;
 }
 
