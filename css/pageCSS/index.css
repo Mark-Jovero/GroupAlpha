@@ -1,6 +1,7 @@
 .trending {
 	display: grid;
 	grid-template-areas: 'item1 item2 item3';
+	margin: 0 0 80px 0;
 }
 
 .item1 {

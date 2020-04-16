@@ -33,6 +33,7 @@
 	grid-area: header;
 	border-bottom: 1px solid var(--main-border-color);
 	background-color: #8288a1 !important;
+	z-index:99;
 }
 
 .top-right {

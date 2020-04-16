@@ -5,7 +5,8 @@
 	<link href="css/outline.css" rel="stylesheet" type="text/css">
 	<link href="css/cart.css" rel="stylesheet" type="text/css">
 	<link href="css/pageCSS/index.css" rel="stylesheet" type="text/css">
-
+	<link href="css/carousel.css" rel="stylesheet" type="text/css">
+	<link href="css/stylization.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -41,19 +42,84 @@
 		<div class="gap-left">&nbsp;<br></div><!--Dont put any content here please-->
 	
 		<div class="main">
-			<h1>FEATURED PRODUCTS</h1>
-			Something here.
-			<h1>TRENDING NOW</h1>
-			<div class="trending">
+			<div class="carousel">
+				<div class="carousel-inner">
+					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+					<div class="carousel-item">
+						<img src="images/carousel-pics/watercolor.jpg">
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item">
+						<img src="images/carousel-pics/moleskin-notebook.jpg">
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item">
+						<img src="images/carousel-pics/orange-stationary.jpg">
+					</div>
+					<label for="carousel-3" class="carousel-control prev control-1">‹</label>
+					<label for="carousel-2" class="carousel-control next control-1">›</label>
+					<label for="carousel-1" class="carousel-control prev control-2">‹</label>
+					<label for="carousel-3" class="carousel-control next control-2">›</label>
+					<label for="carousel-2" class="carousel-control prev control-3">‹</label>
+					<label for="carousel-1" class="carousel-control next control-3">›</label>
+					<ol class="carousel-indicators">
+						<li>
+							<label for="carousel-1" class="carousel-bullet">•</label>
+						</li>
+						<li>
+							<label for="carousel-2" class="carousel-bullet">•</label>
+						</li>
+						<li>
+							<label for="carousel-3" class="carousel-bullet">•</label>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="flex-container title-padding">
+				<p class="title-font">FEATURED PRODUCTS</p>
+			</div>
+			<div class="flex-container">
+				<div class="gallery">
+					<a target="_blank" href="products/items/11_8_board.png">
+					<img src="products/items/11_8_board.png" alt="Cinque Terre" width="600" height="900">
+					</a>
+					<div class="desc">Whiteboard 11 X 8</div>
+				</div>
+				
+				<div class="gallery">
+					<a target="_blank" href="products/items/ball_pen.png">
+					<img src="products/items/ball_pen.png" alt="Forest" width="600" height="700">
+					</a>
+					<div class="desc">Ball Pen</div>
+				</div>
+				
+				<div class="gallery">
+					<a target="_blank" href="products/items/ball_pen.png">
+					<img src="products/items/ball_pen.png" alt="Northern Lights" width="600" height="700">
+					</a>
+					<div class="desc">Ball Pen</div>
+				</div>
+				
+				<div class="gallery">
+					<a target="_blank" href="products/items/ball_pen.png">
+					<img src="products/items/ball_pen.png" alt="Mountains" width="600" height="700">
+					</a>
+					<div class="desc">Ball Pen</div>
+				</div>
+			</div>
+			<div class="flex-container title-padding">
+				<p class="title-font">TRENDING NOW</p>
+			</div>
+			<div class="flex-container trending">
 			
 				<div class="item1"><a href="products/store.html"><img src="images/multicolored-markers.jpg" width="500px" height="350px"></a><br>
-				<a href="products/store.html"><font size="4">Markers</font></a></div>
+				<a href="products/store.html"><p class="trending-link">Markers</p></a></div>
 				
 				<div class="item2"><a href="products/store.html"><img src="images/black-notebook.jpg" width="500px" height="350px"></a><br>
-				<a href="products/store.html"><font size="4">Notebooks</font></a></div>
+				<a href="products/store.html"><p class="trending-link">Notebooks</p></a></div>
 				
 				<div class="item3"><a href="products/store.html"><img src="images/paint-swatches.jpg" width="500px" height="350px"></a><br>
-				<a href="products/store.html"><font size="4">Paint Swatches</font></a></div>	
+				<a href="products/store.html"><p class="trending-link">Paint Swatches</p></a></div>	
 				<br><br>
 			</div>
 		</div>
