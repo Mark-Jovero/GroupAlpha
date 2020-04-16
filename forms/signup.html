@@ -3,79 +3,77 @@
 
 	<header>
 		<title>Login</title>
-        <link href="../css/outline.css" rel="stylesheet" type="text/css">
-            
-    <div class="headContainer" align="center">
-			<div class="loginContainer">
-				<table width="50%" align="right">
-					<tr>
-						<td></td>
-						<td height="25px" width="90px">
-							<a target="_parent" href="../forms/login.html">Login</a>
-						</td>
-						<td height="25px" width="90px">
-							<a target="_parent" href="../faq.html">Help</a>
-						</td>
-						<td align ="center" height="10" width = "60px">
-							<details class="shoppingCartPopUp">
-								<summary><img src="../images/icons8-shopping-cart-64.png" height ="30"width="30" alt="Cart"></summary>
-								<p> Your cart is empty.</p>
-								<form>
-									<button type="submit" formaction="../cart.html"> Checkout </button>
-								</form>
-							</details>
-						</td>
-					</tr>
-				</table>
-			</div>
-			
-			<div class="navBar">
-				<iframe src="../frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe>
-			</div>
-		
-		</div>
-    </header>
+    <link href="../css/outline.css" rel="stylesheet" type="text/css">
+    <link href="../css/cart.css" rel="stylesheet" type="text/css">
+    <link href="../css/pageCSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/stylization.css" rel="stylesheet" type="text/css">
+    <link href="../css/forms.css" rel="stylesheet" type="text/css">
     <body>
-      <center>
-        <table height="300px">
-          <tr>
-            <div class="form-signup">
-                <form >
-                    <div class="container">
-                      <h1>Sign Up</h1>
-                      <p>Please fill in this form to create an account.</p>
-                      <p> 
-                          <label for="email"><b>Email</b></label>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                      </p>
-                     <p><label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required></p>
-                         <p>
-                            <label for="psw-repeat"><b>Repeat Password</b></label>
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>   
-                         </p>
-                          <p>
-                              <label>
-                                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                                </label>
-                          </p>
-                      <p>By creating an account you agree to our <a href="../tos.html">Terms & Privacy</a>.</p>
-                  
-                      <div>
-                        <button type="button" >Cancel</button>
-                        <button type="submit">Sign Up</button>
-                      </div>
-                    </div>
-                  </form>
+      <div class="container_grid">
+		
+        <div class="top-right">
+          <div class="login"><a target="_parent" href="login.html">Login</a></div>
+          <div class="help"><a target="_parent" href="../faq.html">Help</a></div>
+          <div class="cart">
+              
+              <img class="icon_hover" src="../images/cart_hover.png" alt="Cart" width="27px">
+              <img class="icon_nohover" src="../images/cart_NOhover.png" alt="nCart" width="27px" align="middle">
+              <div class="cart_content">
+                <br><span><b>Your Cart</b></span><br>
+                <hr>
+                <p><img class="item" src="../products/items/markers.png"></p>
+                <p>Markers - 4.99</p>
+                <p><img class="item" src="../products/items/premium_pencil_6.png"></p>
+                <p>Premium Pencils - 4.99</p>
+                <br><br>
+                <form>
+                  <button type="submit" formaction="../cart.html"> Checkout </button>
+                </form>
+              </div>
+              
+          </div>
+        </div>
+        
+        <div class="header"></div>
+        
+        <div class="menu"><iframe src="../frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe></div>
+      
+        <div class="gap-left">&nbsp;<br></div><!--Dont put any content here please-->
+        <div class="main">
+          <center>
+            <table height="200px">
+              <tr>
+                <div class= "signinOptions"></div>
+                <h1 class="title-font"> Sign Up </h1>
+                <p class="text-font">Please fill in this form to create an account.</p>
+                <div class="login-page">
+                  <div class="form">
+                    <form class="register-form" action="/my-handling-form-page" method="post">
+                      <input type="text" id="name" placeholder="name"/>
+                      <input type="text" id="mail" placeholder="email address"/>
+                      <input type="password" id="pass" placeholder="password"/>
+                      <button type = "submit">Sign Up</button>
+                      <p class="text-font text-fontSmall">
+                        <label>
+                              <input type="checkbox" checked="checked" name="remember" style="width: 19px;"> Remember me
+                          </label>
+                    </p>
+                    <p class="text-font text-fontSmall">By creating an account you agree to our <a id="terms"href="../tos.html">Terms & Privacy</a>.</p>
+                    </form>
+                  </div>
+                </div>
+              </tr>
+            </table>
+          </center>
+        </div>
+          <div class="footer">
+            <br>
+              <iframe src="../frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
             </div>
-          </tr>
-        </table>
-      </center>
+            
+            
+            <div class="gap-right">&nbsp;<br></div><!--Dont put any content here please-->
+        </div>
     </body>
-    <footer>
-      <div class="footerContainer">
-        <iframe src="../frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"></iframe>
-      </div>
-    </footer>
 
 </html>
