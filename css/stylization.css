@@ -17,7 +17,32 @@ a:link, a:visited {
   text-decoration: none;
   color: black;
 }
+/* Link Style 10 */
+.linkP a p{
+	position:relative;
+	text-decoration: none;
+ 	transition:color .15s ease-in-out;
+}
 
+.linkP a:hover p{
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.linkP a.is-active p,
+.linkP a:active p,
+.linkP a:focus p,
+.linkP a:hover p {
+ 	color:#8288a1;
+}
+
+.linkP a.is-active:after p,
+.linkP a:active:after p,
+.linkP a:focus:after p,
+.linkP a:hover:after p{
+ 	transform:translateY(0);
+ 	opacity:1;
+}
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
