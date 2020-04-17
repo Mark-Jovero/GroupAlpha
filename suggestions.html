@@ -5,6 +5,7 @@
 	<link href="css/outline.css" rel="stylesheet" type="text/css">
 	<link href="css/cart.css" rel="stylesheet" type="text/css">
 	<link href="css/pages.css" rel="stylesheet" type="text/css">
+	<link href="css/forms.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -40,25 +41,43 @@
 	
 		<div class="gap-left">&nbsp;<br></div><!--Dont put any content here please-->
 	
-		<div class="main">
+		<div class="main" style="grid-template-columns: auto 5%;">
 			<div class="content">
-			
-			<form>
-					
-						<label for="sname">Full Name: </label><br>
-						<input type="text" id="sname" name="sname"><br>
-						<label for="sname">email: </label><br>
-						<input type="text" id="email" name="email"><br>
-						<label for="sname">Problem Type: </label><br>
-						<input type="text" id="ptype" name="ptype"><br>
-						<label for="sname">What is the problem?: </label><br>
-						<input type="text" id="pcontent" name="pcontent" size="100"><br>
-						<input type="submit" value="submit">
-					
+				<div class="container" style="max-width: 500px;">
+					<div class="row">
+							<h1 class="message-form-large">Need Assistance?</h1>
+					</div>
+					<div class="row">
+							<h4 class="message-form-small"style="text-align:center">We'd love to hear from you!</h4>
+					</div>
+					<form>
+						<div class="row input-container suggestions">
+								<div class="styled-input">
+									<input type="text" required />
+									<label>Name</label> 
+								</div>
+							
+								<div class="styled-input">
+									<input type="text" required />
+									<label>Email</label> 
+								</div>
+							
+								<div class="styled-input" >
+									<input type="text" required />
+									<label>Problem Type</label> 
+								</div>
+							
+								<div class="styled-input wide">
+									<textarea required></textarea>
+									<label>Message</label>
+								</div>
+							
+								<div class="btn-lrg submit-btn">Submit</div>
+					</div>
 					</form>
+					
+				</div>
 					</center>
-			
-			
 			</div>
 			<div class="sidebar">ADS</div>
 		</div>
