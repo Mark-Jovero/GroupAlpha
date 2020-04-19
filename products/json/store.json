@@ -1,0 +1,10 @@
+{
+"items" : [
+		{
+			"name" : "pencil",
+			"type" : "writing"
+			"price" : "0.99",
+			"img-src" : "items/pencil.png"
+		}
+	]
+}
