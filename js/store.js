@@ -51,10 +51,10 @@ dataRequest.onload = function e() {
 				displayShowMore();
 				while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
 					writeHere[0].innerHTML += "<div class=\'items\'>"
-			 		 + "<img src=\'" + data[i].src + "\'/> <br>"
-					 + data[i].name + " - $"
-					 + data[i].price
-					 + "<br> "+ i + "</div>";
+			 		 + "<img src=\'" + data[i].src + "\'/>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b></div>"
+					 + "<div class=\'item-price-container\'><div class=\'item-price\'>" + data[i].price + "</div></div>"
+					 + "</div>";
 					i++
 				}
 			}
@@ -69,7 +69,9 @@ dataRequest.onload = function e() {
 	}
 	
 	var highestItem = 0;
+	var highestLoc = 0;
 	var currentItem = 0;
+	var currentLoc = 0;
 	var temp;
 	function highestView() {
 		clearView();
@@ -78,19 +80,21 @@ dataRequest.onload = function e() {
 			i = 0;
 			pageLocation = 1;
 		}
-		while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
-			currentItem = data[i].price;
-			var j = 0;
-			while (j+1 <= getItemCount()) {
-				highestItem = data[j].price;
-				if (highestItem > currentItem) {
-					currentItem = highestItem;
-				}
-				j++;
+		while (i+1 < getItemCount()) {
+			if (data[i+1].price > data[i].price) {
+				highestLoc = i+1;
 			}
 			i++;
 		}
-		console.log(currentItem);
+		i = 0;
+		while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
+			writeHere[0].innerHTML += "<div class=\'items\'>"
+			 		 + "<img src=\'" + data[highestLoc].src + "\'/>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[highestLoc].name + "</font></b></div>"
+					 + "<div class=\'item-price-container\'><div class=\'item-price\'>" + data[highestLoc].price + "</div></div>"
+					 + "</div>";
+					i++
+		}
 	}
 	
 	function resetView() {
