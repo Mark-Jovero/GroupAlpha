@@ -4,24 +4,24 @@
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
 	"price" 	: 	"0.99",
-	"imgsrc" 	: 	"items/pencil.png"
+	"imgsrc" 	: 	"items\\pencil.png"
 	},
 	{
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"imgsrc" 	: 	"items/pencil.png"
+	"imgsrc" 	: 	"items\\pencil.png"
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"imgsrc" 	: 	"items/pencil.png"
+	"imgsrc" 	: 	"items\\pencil.png"
 	},
 	{
 	"name" 		: 	"gel",
 	"type" 		: 	"writing",
 	"price" 	: 	"2.99",
-	"imgsrc" 	: 	"items/pencil.png"
+	"imgsrc" 	: 	"items\\pencil.png"
 	}
 ]
