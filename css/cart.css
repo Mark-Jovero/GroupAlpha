@@ -1,5 +1,5 @@
 :root { /*Store Variables Here*/
-	--main-border-color: lightblue;
+	--main-border-color: white;
 	--cart-bg-color: white;
 }
 
@@ -12,28 +12,34 @@
 	'login help cart cart';
 }
 
-.top-right > .login {
-	position: fixed;
+.top-right .login {
+	position: relative;
 	font-weight: bold;
 	grid-area: login;
-	position: relative;
-	vertical-align: middle;
-	top: 4px;
+	top: 0;
+	width: 100%;
+	padding-top: 5%;
+	margin: 0;
 }
 
-.top-right > .help {
-	position: fixed;
+.top-right .help {
+	position: relative;
 	font-weight: bold;
 	grid-area: help;
-	position: relative;
-	vertical-align: middle;
-	top: 4px;
+	top: 0;
+	width: 100%;
+	padding-top: 5%;
+	margin: 0;
+}
+
+.top-right .help:hover, .top-right .login:hover {
+	background-color: silver;
+	color: black;
 }
 
 .top-right > .cart {
 	grid-area: cart;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+
 }
 
 .top-right > .cart  > .icon_nohover {
@@ -62,24 +68,21 @@
 }
 
 .top-right > .cart:hover {
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+
 }
 
 .top-right > .cart > .cart_content { /*default*/
 	position: absolute;
-	right: 1px;
+	right: -1px;
 	display: none;
 	padding: 3px;
 	background-color: var(--cart-bg-color);
-	border-top-right-radius: 5px;
-	border-top-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 5px;
 	border: 1px solid black;
 	border-top: 0;
 	z-index: 0;
 	width: 60%;
+	top: 30px;
 }
 
 .top-right > .cart > .cart_content > p > .item {

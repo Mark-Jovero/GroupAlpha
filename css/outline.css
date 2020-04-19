@@ -22,14 +22,14 @@
 }
 
 .container_grid > div {
-	padding: 5px;
+
 	background-color: white;
 }
 
 .header {
 	position: fixed;
 	width: 100%;
-	height: 27px;
+	height: 30px;
 	grid-area: header;
 	border-bottom: 1px solid var(--main-border-color);
 	background-color: #8288a1 !important;
@@ -39,9 +39,10 @@
 .top-right {
 	position: fixed;
 	width: 20%;
-	right: 0px;
+	right: 0;
 	grid-area: top-right;
 	z-index: 100;
+	height: 30px;
 	background-color: #8288a1 !important;
 }
 
