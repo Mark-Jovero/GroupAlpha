@@ -10,6 +10,7 @@
 	grid-area: top-right;
 	grid-template-areas:
 	'login help cart cart';
+	z-index: 100;
 }
 
 .top-right .login {

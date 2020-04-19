@@ -1,0 +1,120 @@
+.container_grid {
+	grid-template-areas:
+	'header header header header header header header top-right top-right top-right top-right top-right'
+	'menu menu menu menu menu menu menu menu menu menu menu menu'
+	'gap-left main main main main main main main main main main gap-right '
+	'footer footer footer footer footer footer footer footer footer footer footer footer' !important;
+}
+
+.main {
+	width: 100%;
+	min-height: 1000px;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	margin-bottom: 20px;
+}
+
+.main img {
+	width: 250px;
+}
+
+ .content {
+	width: 0px;
+  	display: grid;
+  	grid-template-areas: "a a a a";
+  	grid-gap: 20px;
+  	grid-auto-rows: 290px;
+}
+
+.items {
+	position: relative;
+	height: 250px;
+	padding: 20px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	z-index: 0;
+	background-color: white;
+}
+
+.items:hover {
+	position: relative;
+	height: 120%;
+	z-index: 100;
+	box-shadow: 0 2px 30px 0;
+}
+
+
+.shop_nav_container {
+	position: relative;
+	margin-top: 30px;
+	width: 25%;
+	height: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	left: 37%;
+	display: none;
+}
+
+
+.shop_nav_container:hover {
+	background-color: silver;
+	color: black;
+}
+
+.shop_nav {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 5px;
+}
+
+
+.sort {
+	width: 90%;
+	position: sticky;
+	left: 10px;
+	margin-right: 10px;
+}
+
+.sort .price, .sort .reset {
+	width: 100%;
+	background-color: gray;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 10px;
+}
+
+.sort .price:hover, .reset:hover {
+	width: 100%;
+	background-color: lightgray;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.dropdown1{
+	position: relative;
+	display: none;
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.reset {
+	position: relative;
+	background-color: lightgray;
+	cursor: pointer
+}
+
+.sort .price:hover .dropdown1{
+	display: block;
+}
+
+.sort .dropdown1:hover {
+	background-color: silver;
+}
