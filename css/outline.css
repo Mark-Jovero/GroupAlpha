@@ -10,7 +10,7 @@
 	grid-template-areas:
 	'header header header header header header header top-right top-right top-right top-right top-right'
 	'menu menu menu menu menu menu menu menu menu menu menu menu'
-	'gap-left gap-left gap-left gap-left main main main main gap-right gap-right gap-right gap-right '
+	'main main main main main main main main main main main main '
 	'footer footer footer footer footer footer footer footer footer footer footer footer';
 	padding: 0px;
 	grid-gap: 0px;
@@ -52,26 +52,22 @@
 .main {
 	grid-area: main;
 	display: grid;
-	min-height: 450px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid var(--main-border-color);
+	box-shadow: 0 0 20px 0;
+	padding: 20px;
 }
 
 .right {
 	grid-area: right;
 }
 
-.gap-right {
-	grid-area: gap-right;
-}
 
-.gap-left {
-	grid-area: gap-left;
-}
 
 .footer {
 	grid-area: footer;	
 	background-color: #8288a1 !important;
-	bottom: 0px;
+	bottom: 0;
 	min-height: 200px;
 }
 
