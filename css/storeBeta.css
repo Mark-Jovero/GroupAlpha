@@ -1,0 +1,166 @@
+.container_grid {
+	grid-template-areas:
+	'header header header header header header header top-right top-right top-right top-right top-right'
+	'menu menu menu menu menu menu menu menu menu menu menu menu'
+	'gap-left main main main main main main main main main main gap-right '
+	'footer footer footer footer footer footer footer footer footer footer footer footer' !important;
+}
+
+.main {
+	width: 100%;
+	min-height: 1000px;
+	display: grid;
+	grid-template-columns: 15% 85%;
+	margin-bottom: 20px;
+}
+
+.main img {
+	width: 250px;
+	height: 130px;
+}
+
+ .content {
+	width: 90%;
+  	display: grid;
+  	grid-template-areas: "a a a a";
+  	grid-gap: 20px;
+  	grid-auto-rows: 330px;
+}
+
+.item-name {
+	position: relative;
+	width: 100%;
+	height: 27%;
+	text-align: center;
+	color: black;
+	bottom: 0;
+	background-color: white;
+}
+
+.item-price-container {
+	position: relative;
+	width: 100%;
+	height: 44px;
+	background-color: #D2FFC8;
+}
+
+.item-price {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	top: 30%;
+	text-align: center;
+	color: black;
+	background-color: #D2FFC8;
+	padding-bottom: 0 !important;
+	font-weight: bold;
+}
+
+.items {
+	height: 250px;
+	z-index: 0;
+	background-color: white;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.items:hover {
+	position: relative;
+	box-shadow: 0 2px 30px 0;
+}
+
+.items:hover .item-price-container, .items:hover .item-price{
+	position: relative;
+	background-color: green;
+	color: white;
+}
+
+.item-price-container:hover {
+	cursor: pointer;
+}
+
+
+.shop_nav_container {
+	position: relative;
+	margin-top: 30px;
+	width: 25%;
+	height: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	left: 30%;
+	display: none;
+}
+
+
+.shop_nav_container:hover {
+	background-color: silver;
+	color: black;
+	cursor: pointer;
+}
+
+.shop_nav {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 5px;
+}
+
+
+.sort {
+	width: 90%;
+	left: 10px;
+	margin-right: 10px;
+	margin-bottom: 100px;
+	color: white;
+}
+
+.sort .price, .sort .reset {
+	width: 100%;
+	background-color: gray;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 10px;
+}
+
+.sort .price:hover, .reset:hover {
+	width: 100%;
+	background-color: lightgray;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+}
+
+.dropdown1{
+	position: relative;
+	display: none;
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.reset {
+	position: relative;
+	background-color: lightgray;
+	cursor: pointer
+}
+
+.sort .price:hover .dropdown1{
+	display: block;
+}
+
+.sort .dropdown1:hover {
+	background-color: silver;
+}
+
+.caution {
+	position: relative;
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}
