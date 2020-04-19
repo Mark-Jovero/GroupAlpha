@@ -101,7 +101,7 @@
 	{
 	"name" 		: 	"Computer Desk",
 	"type" 		: 	"furniture",
-	"price" 	: 	"430.49",
+	"price" 	: 	"120.49",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
 	},
