@@ -99,9 +99,9 @@
 	"empty" 	: 	""
 	},
 	{
-	"name" 		: 	"pencil",
-	"type" 		: 	"writing",
-	"price" 	: 	"0.99",
+	"name" 		: 	"Computer Desk",
+	"type" 		: 	"furniture",
+	"price" 	: 	"130.49",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
 	},
