@@ -125,5 +125,96 @@
 	"price" 	: 	"0.99",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
 	}
 ]
