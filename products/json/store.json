@@ -20,7 +20,7 @@
 	"price" 	: 	"1.99",
 	"src"		:	"items/markers.png",
 	"empty" 	: 	""
-	}
+	},
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
