@@ -3,7 +3,7 @@
 	{
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
-	"price" 	: 	"10.99",
+	"price" 	: 	"0.99",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
 	},
@@ -11,42 +11,42 @@
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"src"		:	"items/pencil.png",
+	"src"		:	"items/pen.png",
 	"empty" 	: 	""
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"src"		:	"items/pencil.png",
+	"src"		:	"items/markers.png",
 	"empty" 	: 	""
 	},
 	{
 	"name" 		: 	"gel",
 	"type" 		: 	"writing",
 	"price" 	: 	"2.99",
+	"src"		:	"items/pen.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil (2pack)",
+	"type" 		: 	"writing",
+	"price" 	: 	"1.49",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
 	},
 	{
-	"name" 		: 	"pencil",
+	"name" 		: 	"pen (2pack)",
 	"type" 		: 	"writing",
-	"price" 	: 	"0.99",
+	"price" 	: 	"3.99",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
 	},
 	{
-	"name" 		: 	"pencil",
+	"name" 		: 	"small white board",
 	"type" 		: 	"writing",
-	"price" 	: 	"0.99",
-	"src"		:	"items/pencil.png",
-	"empty" 	: 	""
-	},
-	{
-	"name" 		: 	"pencil",
-	"type" 		: 	"writing",
-	"price" 	: 	"0.99",
-	"src"		:	"items/pencil.png",
+	"price" 	: 	"12.99",
+	"src"		:	"items/11_8_board.png",
 	"empty" 	: 	""
 	},
 	{
