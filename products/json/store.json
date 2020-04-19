@@ -216,5 +216,194 @@
 	"price" 	: 	"0.99",
 	"src"		:	"items/pencil.png",
 	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"whiteboard",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"test",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"notebook",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"paper",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"box",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"folder",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"sharpie",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"backpack",
+	"type" 		: 	"writing",
+	"price" 	: 	"32.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil case",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"colored pencils",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"assorted Markers",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"whiteboard",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"test",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"notebook",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"paper",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"box",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"folder",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"sharpie",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"backpack",
+	"type" 		: 	"writing",
+	"price" 	: 	"32.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"pencil case",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	},
+	{
+	"name" 		: 	"colored pencils",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
+	}
+	,
+	{
+	"name" 		: 	"assorted Markers",
+	"type" 		: 	"writing",
+	"price" 	: 	"0.99",
+	"src"		:	"items/pencil.png",
+	"empty" 	: 	""
 	}
 ]
