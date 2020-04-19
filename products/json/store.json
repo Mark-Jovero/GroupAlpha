@@ -5,27 +5,23 @@
 	"type" 		: 	"writing",
 	"price" 	: 	"0.99",
 	"src"		:	"items/pencil.png",
-	"empty" 	: 	""
 	},
 	{
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
 	"src"		:	"items/pen.png",
-	"empty" 	: 	""
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
 	"src"		:	"items/markers.png",
-	"empty" 	: 	""
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
 	"src"		:	"items/markers.png",
-	"empty" 	: 	""
 	}
 ]
