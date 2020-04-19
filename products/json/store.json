@@ -4,24 +4,28 @@
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
 	"price" 	: 	"0.99",
-	"src"		:	"items/pencil.png"
+	"src"		:	"items/pencil.png",
+	"key"		:	0
 	},
 	{
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"src"		:	"items/pen.png"
+	"src"		:	"items/pen.png",
+	"key"		:	1
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"src"		:	"items/markers.png"
+	"src"		:	"items/markers.png",
+	"key"		:	2
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	"1.99",
-	"src"		:	"items/markers.png"
+	"src"		:	"items/markers.png",
+	"key"		:	3
 	}
 ]
