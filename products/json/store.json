@@ -133,26 +133,5 @@
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
 	"key"		:	18
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"price" 	: 	0.99,
-	"src"		:	"items/markers.png",
-	"key"		:	19
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"price" 	: 	19.99,
-	"src"		:	"items/markers.png",
-	"key"		:	20
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"price" 	: 	19.99,
-	"src"		:	"items/markers.png",
-	"key"		:	21
 	}
 ]
