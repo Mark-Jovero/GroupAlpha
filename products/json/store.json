@@ -3,7 +3,7 @@
 	{
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
-	"price" 	: 	2.99,
+	"price" 	: 	22.99,
 	"src"		:	"items/pencil.png",
 	"key"		:	0
 	},
