@@ -4,7 +4,7 @@ AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
 A website that sells office supplies!
 
 ## JSON File is now used for Store.html
-- The .json file is located in products/json/store.json.
+- The .json file is located in [products/json/store.json](https://github.com/Mark-Jovero/GroupAlpha/blob/master/products/json/store.json).
 - There are a lot of items in it, been testing.
 - Items can be added by following the format:
 ```
