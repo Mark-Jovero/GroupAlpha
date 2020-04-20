@@ -46,9 +46,9 @@ dataRequest.onload = function e() {
 		return -1;
 	}
 	
-	function pushToArray() {
+	function sortHighest() {
 		var list = new Array();
-		var sorted = new Array();
+
 		
 		//Push keys to array
 		var i = 0;
@@ -113,6 +113,21 @@ dataRequest.onload = function e() {
 		}
 	}
 	
+	function highestView() {
+		clearView();
+		var sorted = sortHighest();
+		var i = 0;
+		console.log(data[sorted[i]].src);
+		while(i <= sorted.length) {
+			writeHere[0].innerHTML += "<div class=\'items\'>"
+			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b></div>"
+					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
+					 + "</div>";
+			i++;
+		}
+	}
+	
 	function resetView() {
 		resetStatus = 1;
 		writeHere[0].innerHTML = "";
@@ -127,16 +142,13 @@ dataRequest.onload = function e() {
 	}
 	
 	function main() {
-		var list = pushToArray();
-		for (var i = 0; i < list.length; i++) {
-			console.log(data[list[i]].price);
-		}
 		defaultView();
 		reset[0].onclick = function() {
 			resetView();
 		}
 		
 		highest.onclick = function() {
+			highestView();
 		}
 	}
 	main();
