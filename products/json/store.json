@@ -76,83 +76,83 @@
 	"type" 		: 	"writing",
 	"price" 	: 	0.99,
 	"src"		:	"items/markers.png",
-	"key"		:	7
+	"key"		:	10
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	8
+	"key"		:	11
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	9
+	"key"		:	12
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	0.99,
 	"src"		:	"items/markers.png",
-	"key"		:	7
+	"key"		:	13
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	8
+	"key"		:	14
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	9
+	"key"		:	15
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	0.99,
 	"src"		:	"items/markers.png",
-	"key"		:	7
+	"key"		:	16
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	8
+	"key"		:	17
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	9
+	"key"		:	18
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	0.99,
 	"src"		:	"items/markers.png",
-	"key"		:	7
+	"key"		:	19
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	8
+	"key"		:	20
 	},
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
 	"price" 	: 	19.99,
 	"src"		:	"items/markers.png",
-	"key"		:	9
+	"key"		:	21
 	}
 ]
