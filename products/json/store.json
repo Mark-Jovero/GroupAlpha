@@ -10,7 +10,7 @@
 	{
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
-	"price" 	: 	12.99,
+	"price" 	: 	42.99,
 	"src"		:	"items/pen.png",
 	"key"		:	1
 	},
