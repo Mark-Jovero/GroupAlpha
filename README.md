@@ -3,6 +3,19 @@ AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
 
 A website that sells office supplies!
 
+## JSON File is now used for Store.html
+- The .json file is located in products/json/store.json.
+- There are a lot of items in it, been testing.
+- Items can be added by following the format:
+```
+{
+"name"  :   "item name",
+"type"  :   "item classification"
+"price" :   integer/double/float (no quotation marks),
+"src"   :   "items/____.png" - Source of image
+"page"  :   "productPage/___.html" - This is going to be implemented in the coming days, hopefully...
+} <-(If you're adding multiple items, don't forget to add a comma here!)
+```
 ## How to Use GENERIC.html
 - The GENERIC.html is in the root directory. The webpage is a template so it matches the whole website theme.
 - To create a webpage using the GENERIC.html template, create a copy of it and rename it to what ever webpage you want.
