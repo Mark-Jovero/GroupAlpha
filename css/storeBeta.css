@@ -109,7 +109,7 @@
 }
 
 .advertisement {
-	position: sticky;
+	position: relative;
 	color: red;
 	z-index: 1;
 	top: 40px;
@@ -192,4 +192,13 @@
 	color: red;
 	font-weight: bold;
 	font-size: 20px;
+}
+
+* {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
 }
