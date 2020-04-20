@@ -12,6 +12,7 @@ dataRequest.onload = function e() {
 	var reset = document.getElementsByClassName("reset");
 	var highest = document.getElementById("highest");
 	var lowest = document.getElementById("lowest");
+	var priceDivSort = document.getElementsByClassName("price");
 	var itemCount = data.length;
 	var ITEMS_PER_PAGE = 20;
 	var pageNum = 1;
@@ -184,6 +185,7 @@ dataRequest.onload = function e() {
 	}
 	
 	function main() {
+	
 		defaultView();
 		reset[0].onclick = function() {
 			resetView();
@@ -195,6 +197,25 @@ dataRequest.onload = function e() {
 		
 		lowest.onclick = function() {
 			lowestView();
+		}
+		var priceState = 0;
+		priceDivSort[0].onclick = function() {
+			var e = document.getElementById("lowest");
+			var r = document.getElementById("highest");
+			if (priceState == 0) {
+				e.style.zIndex = "1";
+				e.style.height = "30px";
+				r.style.zIndex = "1";
+				r.style.height = "30px";
+				priceState = 1;
+			}
+			else if (priceState == 1) {
+				e.style.zIndex = "-10";
+				e.style.height = "30px";
+				r.style.zIndex = "-10";
+				r.style.height = "30px";
+				priceState = 0;
+			}
 		}
 	}
 	main();
