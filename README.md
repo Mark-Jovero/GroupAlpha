@@ -16,6 +16,9 @@ A website that sells office supplies!
 "page"  :   "productPage/___.html" - This is going to be implemented in the coming days, hopefully...
 } <-(If you're adding multiple items, don't forget to add a comma here!)
 ```
+- Items are sorted in the store.js file. If a user chooses to sort by price, the js program will do the sorting.
+- Please let me know if there are any issues viewing it, or if there are viewing glitches! Thanks.
+
 ## How to Use GENERIC.html
 - The GENERIC.html is in the root directory. The webpage is a template so it matches the whole website theme.
 - To create a webpage using the GENERIC.html template, create a copy of it and rename it to what ever webpage you want.
