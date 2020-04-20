@@ -11,6 +11,7 @@ dataRequest.onload = function e() {
 	var showMore = document.getElementsByClassName("shop_nav_container");
 	var reset = document.getElementsByClassName("reset");
 	var highest = document.getElementById("highest");
+	var lowest = document.getElementById("lowest");
 	var itemCount = data.length;
 	var ITEMS_PER_PAGE = 20;
 	var pageNum = 1;
@@ -113,9 +114,30 @@ dataRequest.onload = function e() {
 		}
 	}
 	
+	function sortLowest() {
+		var lowest = sortHighest();
+		lowest.reverse();
+		return lowest;
+	}
+	
 	function highestView() {
 		clearView();
 		var sorted = sortHighest();
+		var i = 0;
+		console.log(data[sorted[i]].src);
+		while(i <= sorted.length) {
+			writeHere[0].innerHTML += "<div class=\'items\'>"
+			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b></div>"
+					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
+					 + "</div>";
+			i++;
+		}
+	}
+	
+	function lowestView() {
+		clearView();
+		var sorted = sortLowest();
 		var i = 0;
 		console.log(data[sorted[i]].src);
 		while(i <= sorted.length) {
@@ -149,6 +171,10 @@ dataRequest.onload = function e() {
 		
 		highest.onclick = function() {
 			highestView();
+		}
+		
+		lowest.onclick = function() {
+			lowestView();
 		}
 	}
 	main();
