@@ -114,7 +114,9 @@ dataRequest.onload = function e() {
 				console.log(data[i]);
 				var description = data[i].desc;
 				if (description.length > 30) {
-					description = description.substring(0, 20) + "...[click for more]";
+					var tempo = description.substring(20,description.length);
+					var spaceLoc = 20 + tempo.search(" ");
+					description = description.substring(0, spaceLoc) + "...[more]";
 				}
 					writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[i].src + "\'/>"
@@ -159,11 +161,16 @@ dataRequest.onload = function e() {
 		var i = 0;
 		console.log(data[sorted[i]].src);
 		while(i+1 <= sorted.length && i+1 <= pageLocation*ITEMS_PER_PAGE) {
-			console.log(data[sorted[i]].keyID);
+			var description = data[sorted[i]].desc;
+				if (description.length > 30) {
+					var tempo = description.substring(20,description.length);
+					var spaceLoc = 20 + tempo.search(" ");
+					description = description.substring(0, spaceLoc) + "...[more]";
+				}
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
 					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
-					  + data[i].desc + "</div>"
+					  + description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
 					 
@@ -203,10 +210,16 @@ dataRequest.onload = function e() {
 		var i = 0;
 		console.log(data[sorted[i]].src);
 		while(i+1 <= sorted.length && i+1 <= pageLocation*ITEMS_PER_PAGE) {
+			var description = data[sorted[i]].desc;
+				if (description.length > 30) {
+					var tempo = description.substring(20,description.length);
+					var spaceLoc = 20 + tempo.search(" ");
+					description = description.substring(0, spaceLoc) + "...[more]";
+				}
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
 					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
-					  + data[i].desc + "</div>"
+						+ description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
 			i++;
