@@ -5,7 +5,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	22.99,
 	"src"		:	"items/pencil.png",
-	"keyID"		:	100,
+	"keyID"		:	0,
 	""		:	null
 	},
 	{
