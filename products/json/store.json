@@ -3,7 +3,7 @@
 	{
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"A pencil you can write with!",
 	"price" 	: 	22.99,
 	"src"		:	"items/pencil.png",
 	"page"		:	"productPage/pencil.html",
@@ -13,7 +13,7 @@
 	{
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"This is a normal black pen!",
 	"price" 	: 	42.99,
 	"src"		:	"items/pen.png",
 	"page"		:	"productPage/pencil.html",
@@ -23,7 +23,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"Extra thick marker!",
 	"price" 	: 	1.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -33,7 +33,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"some expensive marker.",
 	"price" 	: 	3.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
