@@ -73,7 +73,7 @@
 	{
 	"name" 		: 	"Test Item",
 	"type" 		: 	"test",
-	"desc"		:	"This is a paragraph-long description to test how JavaScript handles it.\\nCool. Cool.",
+	"desc"		:	"This is a paragraph-long description to test how JavaScript handles it.U+000AnCool. Cool.",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
