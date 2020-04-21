@@ -23,8 +23,54 @@
 	width: 90%;
   	display: grid;
   	grid-template-areas: "a a a a";
-  	grid-gap: 20px;
+  	grid-gap: 10px;
   	grid-auto-rows: 330px;
+}
+
+@media all and (max-width: 800px) {
+  /* For mobile phones: */
+html {
+	overflow-x: hidden !important;
+}
+.content {
+	position: relative;
+    grid-template-areas: "a a";
+    grid-gap: 100px;
+    width: 90%;
+  }
+
+.main {
+	grid-template-columns: 0% 100%;
+}
+
+.items, .main img {
+	width: 200px;
+	height: 150px;
+}
+  
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+  /* For mobile phones: */
+body {
+	overflow-x: hidden !important;
+}
+.content {
+    grid-template-areas: "a a a";
+    grid-gap: 10px;
+    padding-right: 0;
+     width: 750px;
+  }
+
+.main {
+	grid-template-columns: 20% 100%;
+}
+
+.items, .main img {
+	width: 200px;
+	height: 150px;
+}
+  
 }
 
 .item-name {
