@@ -10,10 +10,12 @@ A website that sells office supplies!
 ```
 {
 "name"  :   "item name",
-"type"  :   "item classification"
-"price" :   integer/double/float (no quotation marks),
-"src"   :   "items/____.png" - Source of image
-"page"  :   "productPage/___.html" - This is going to be implemented in the coming days, hopefully...
+"type"  :   "item classification",
+"price" :   integer/double/float, // no quotation marks
+"src"   :   "items/____.png", // Source of image
+"page"  :   "productPage/___.html", // This is going to be implemented in the coming days, hopefully...
+"keyID" :   integer //, // follow the order. ie 0, 1, 2 ...
+""      :   null // you must include this in the last line, or the file breaks :(
 } <-(If you're adding multiple items, don't forget to add a comma here!)
 ```
 - Items are sorted in the store.js file. If a user chooses to sort by price, the js program will do the sorting.
