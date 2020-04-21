@@ -133,7 +133,7 @@
 	{
 	"name" 		: 	"desk",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"A brown writing desk.",
 	"price" 	: 	132.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -153,7 +153,7 @@
 	{
 	"name" 		: 	"laptop",
 	"type" 		: 	"technogy",
-	"desc"		:	"description goes here",
+	"desc"		:	"A medium high-performance quality laptop.",
 	"price" 	: 	999.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -171,9 +171,9 @@
 	""		:	null
 	},
 	{
-	"name" 		: 	"marker",
+	"name" 		: 	"Highlighter",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"Neon green joy!",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -191,20 +191,20 @@
 	""		:	null
 	},
 	{
-	"name" 		: 	"marker",
+	"name" 		: 	"Whiteout",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
+	"desc"		:	"Cover your mistakes.",
+	"price" 	: 	1.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	19,
 	""		:	null
 	},
 	{
-	"name" 		: 	"marker",
+	"name" 		: 	"Eraser",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
+	"desc"		:	"Erase your mistakes.",
+	"price" 	: 	0.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	20,
