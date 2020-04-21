@@ -114,7 +114,8 @@ dataRequest.onload = function e() {
 				console.log(data[i]);
 					writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[i].src + "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b></div><br>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b><br>"
+					 + data[i].desc + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[i].price + "</div></div>"
 					 + "</div>";
 					i++;
@@ -157,7 +158,8 @@ dataRequest.onload = function e() {
 			console.log(data[sorted[i]].keyID);
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b></div>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
+					  + data[i].desc + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
 					 
@@ -199,7 +201,8 @@ dataRequest.onload = function e() {
 		while(i+1 <= sorted.length && i+1 <= pageLocation*ITEMS_PER_PAGE) {
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b></div>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
+					  + data[i].desc + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
 			i++;
