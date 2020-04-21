@@ -11,6 +11,7 @@ A website that sells office supplies!
 {
 "name"  :   "item name",
 "type"  :   "item classification",
+"desc"  :   "description of the item",
 "price" :   integer/double/float, // no quotation marks
 "src"   :   "items/____.png", // Source of image
 "page"  :   "productPage/___.html", // This is going to be implemented in the coming days, hopefully...
