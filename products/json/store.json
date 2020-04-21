@@ -43,7 +43,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
+	"desc"		:	"Long description test! This is a long description test! Long description!",
 	"price" 	: 	13.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
