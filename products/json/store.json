@@ -5,6 +5,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	22.99,
 	"src"		:	"items/pencil.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	0,
 	""		:	null
 	},
@@ -13,6 +14,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	42.99,
 	"src"		:	"items/pen.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	1,
 	""		:	null
 	},
@@ -21,6 +23,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	1.99,
 	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	2,
 	""		:	null
 	},
@@ -29,6 +32,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	3.99,
 	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	3,
 	""		:	null
 	},
@@ -37,6 +41,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	13.99,
 	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	4,
 	""		:	null
 	},
@@ -45,6 +50,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	32.99,
 	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	5,
 	""		:	null
 	}
@@ -54,6 +60,7 @@
 	"type" 		: 	"writing",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	6,
 	""		:	null
 	}
