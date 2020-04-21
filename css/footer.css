@@ -20,3 +20,7 @@ table {
 hr {
 	width: 75%;
 }
+
+a:hover {
+	color: lightblue;
+}

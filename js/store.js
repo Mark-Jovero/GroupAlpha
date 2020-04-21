@@ -13,14 +13,20 @@ dataRequest.onload = function e() {
 	var highest = document.getElementById("highest");
 	var lowest = document.getElementById("lowest");
 	var priceDivSort = document.getElementsByClassName("price");
+	var myDivs = document.getElementsByClassName('items');
 	var itemCount = data.length;
-	var ITEMS_PER_PAGE = 20;
+	var ITEMS_PER_PAGE = 16;
 	var pageNum = 1;
 	var lastPage = Math.ceil(itemCount / ITEMS_PER_PAGE);
 	var pageLocation = 1;
 	var displayedItems = 0;
 	var getSortDropDownItems = document.getElementsByClassName("dropdown");
+	var item_x_display = document.getElementById("x-button");
+	var item_display = document.getElementById("itemInfoPopUp");
+	var item_display_overlay = document.getElementById("popupCover");
+	var item_display_content = document.getElementById("itemInfoContent");
 	var resetStatus = 0;
+	var clickedItemID = 0;
 	
 	function getItemCount() {
 		return itemCount;
@@ -94,6 +100,7 @@ dataRequest.onload = function e() {
 	
 	var i = 0;
 	function defaultView() {
+	console.log(data[0].keyID);
 		if (resetStatus == 1) {
 			resetStatus = 0;
 			i = 0;
@@ -104,12 +111,28 @@ dataRequest.onload = function e() {
 				displayShowMore();
 			}
 				while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
-					writeHere[0].innerHTML += "<div class=\'items\'>"
+				console.log(data[i]);
+					writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[i].src + "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b></div>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b></div><br>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[i].price + "</div></div>"
 					 + "</div>";
-					i++
+					i++;
+					for(var p = 0; p < myDivs.length; p++) {
+          				myDivs[p].addEventListener('click', function (event) {
+          				clickedItemID = this.id;
+          				console.log(this.id);
+						item_display_overlay.style.display = "block";
+						
+						item_display_content.innerHTML = "<img src=\'" + data[clickedItemID].src
+							+ "\'><br><b> " + data[clickedItemID].name
+							+ "<br>" + data[clickedItemID].desc
+							+ "<br> Price: $" + data[clickedItemID].price 
+							+	"<br></b> <h3><font color=\'red\'>THIS IS UNDER CONSTRUCTION</font></h3>";
+						
+						disableScrolling();
+           			 });
+       				 } 
 				}
 		}
 		showMore[0].onclick = function() {
@@ -119,6 +142,9 @@ dataRequest.onload = function e() {
 				hideShowMore();
 			}
 		}
+		if (itemCount == 0) { // store is empty
+			writeHere[0].innerHTML = "The store is empty. Please come back soon!";
+		}
 	}
 	
 	
@@ -127,15 +153,31 @@ dataRequest.onload = function e() {
 		var sorted = sortHighest();
 		var i = 0;
 		console.log(data[sorted[i]].src);
-		
 		while(i+1 <= sorted.length && i+1 <= pageLocation*ITEMS_PER_PAGE) {
-
-			writeHere[0].innerHTML += "<div class=\'items\'>"
+			console.log(data[sorted[i]].keyID);
+			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
 					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b></div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
+					 
 			i++;
+			for(var p = 0; p < myDivs.length; p++) {
+          				myDivs[p].addEventListener('click', function (event) {
+          				clickedItemID = data[sorted[this.id]].keyID;
+          				console.log(data[clickedItemID].keyID);
+						item_display_overlay.style.display = "block";
+						
+						item_display_content.innerHTML = "<img src=\'" + data[clickedItemID].src
+							+ "\'><br><b> " + data[clickedItemID].name
+							+ "<br>" + data[clickedItemID].desc
+							+ "<br> Price: $" + data[clickedItemID].price
+							+	"<br> <h3><font color=\'red\'>THIS IS UNDER CONSTRUCTION</font></h3>";
+						
+						disableScrolling();
+           			 });
+       				 }  
+			
 		}
 		showMore[0].onclick = function() {
 			pageLocation += 1;
@@ -155,12 +197,26 @@ dataRequest.onload = function e() {
 		var i = 0;
 		console.log(data[sorted[i]].src);
 		while(i+1 <= sorted.length && i+1 <= pageLocation*ITEMS_PER_PAGE) {
-			writeHere[0].innerHTML += "<div class=\'items\'>"
+			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
 					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b></div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
 			i++;
+			for(var p = 0; p < myDivs.length; p++) {
+          				myDivs[p].addEventListener('click', function (event) {
+          				clickedItemID = data[sorted[this.id]].keyID;
+						item_display_overlay.style.display = "block";
+						
+						item_display_content.innerHTML = "<img src=\'" + data[clickedItemID].src
+							+ "\'><br><b> " + data[clickedItemID].name
+							+ "<br>" + data[clickedItemID].desc
+							+ "<br> Price: $" + data[clickedItemID].price
+							+	"<br> <h3><font color=\'red\'>THIS IS UNDER CONSTRUCTION</font></h3>";
+						
+						disableScrolling();
+           			 });
+       				 } 
 		}
 		showMore[0].onclick = function() {
 			pageLocation += 1;
@@ -184,32 +240,62 @@ dataRequest.onload = function e() {
 		console.log("Clear called");
 	}
 	
+	function getItem() {
+		var itemID = document.getElementsByClassName("items");
+
+	}
+	
+	function disableScrolling(){
+    	var x=window.scrollX;
+   	 	var y=window.scrollY;
+   		window.onscroll=function(){window.scrollTo(x, y);};
+	}
+
+	function enableScrolling(){
+    	window.onscroll=function(){};
+	}
+	
 	function main() {
 	
 		defaultView();
+		
 		reset[0].onclick = function() {
 			resetView();
+		}		
+		
+		item_x_display.onclick = function() {
+			item_display_overlay.style.display = "none";
+			enableScrolling();
 		}
 		
-		highest.onclick = function() {
-			highestView();
+		item_display_overlay.onclick = function() {
+			item_display_overlay.style.display = "none";
+			enableScrolling();
 		}
 		
-		lowest.onclick = function() {
-			lowestView();
-		}
 		var priceState = 0;
 		priceDivSort[0].onclick = function() {
 			var e = document.getElementById("lowest");
 			var r = document.getElementById("highest");
-			if (priceState == 0) {
+			if (priceState == 0) { // open
 				e.style.zIndex = "1";
 				e.style.height = "30px";
 				r.style.zIndex = "1";
 				r.style.height = "30px";
-				priceState = 1;
+				priceState = 1
+				e.onclick = function() {
+					priceState = 0;
+					lowestView();
+				}
+				r.onclick = function() {
+					priceState = 0;
+					highestView();
+				}
+				priceDivSort[0].onclick = function() {
+					priceState = 1;
+				}
 			}
-			else if (priceState == 1) {
+			else if (priceState == 1) { // close
 				e.style.zIndex = "-10";
 				e.style.height = "30px";
 				r.style.zIndex = "-10";
