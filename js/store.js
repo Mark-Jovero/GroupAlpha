@@ -116,7 +116,7 @@ dataRequest.onload = function e() {
 				if (description.length > 30) {
 					var tempo = description.substring(20,description.length);
 					var spaceLoc = 20 + tempo.search(" ");
-					description = description.substring(0, spaceLoc) + "...[more]";
+					description = description.substring(0, spaceLoc) + "... <font id=\'longDescButton\' color=\'blue\'>[more]</font>";
 				}
 					writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[i].src + "\'/>"
@@ -165,7 +165,7 @@ dataRequest.onload = function e() {
 				if (description.length > 30) {
 					var tempo = description.substring(20,description.length);
 					var spaceLoc = 20 + tempo.search(" ");
-					description = description.substring(0, spaceLoc) + "...[more]";
+					description = description.substring(0, spaceLoc) + "... <font id=\'longDescButton\' color=\'blue\'>[more]</font>";
 				}
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
@@ -214,7 +214,7 @@ dataRequest.onload = function e() {
 				if (description.length > 30) {
 					var tempo = description.substring(20,description.length);
 					var spaceLoc = 20 + tempo.search(" ");
-					description = description.substring(0, spaceLoc) + "...[more]";
+					description = description.substring(0, spaceLoc) + "... <font id=\'longDescButton\' color=\'blue\'>[more]</font>";
 				}
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"

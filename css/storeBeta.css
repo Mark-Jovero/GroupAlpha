@@ -116,6 +116,11 @@ body {
 	box-shadow: 0 2px 30px 0;
 	transform: scale(1.03);
 	z-index: 1;
+	cursor: pointer;
+}
+
+#longDescButton:hover {
+	color: lightblue;
 }
 
 .items:hover .item-price-container, .items:hover .item-price{
