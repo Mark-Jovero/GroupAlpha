@@ -6,6 +6,7 @@
 	"price" 	: 	22.99,
 	"src"		:	"items/pencil.png",
 	"keyID"		:	100,
+	""		:	null
 	},
 	{
 	"name" 		: 	"pen",
@@ -13,6 +14,7 @@
 	"price" 	: 	42.99,
 	"src"		:	"items/pen.png",
 	"keyID"		:	1,
+	""		:	null
 	},
 	{
 	"name" 		: 	"marker",
@@ -20,6 +22,7 @@
 	"price" 	: 	1.99,
 	"src"		:	"items/markers.png",
 	"keyID"		:	2,
+	""		:	null
 	},
 	{
 	"name" 		: 	"marker",
@@ -27,6 +30,7 @@
 	"price" 	: 	3.99,
 	"src"		:	"items/markers.png",
 	"keyID"		:	3,
+	""		:	null
 	},
 	{
 	"name" 		: 	"marker",
@@ -34,6 +38,7 @@
 	"price" 	: 	13.99,
 	"src"		:	"items/markers.png",
 	"keyID"		:	4,
+	""		:	null
 	},
 	{
 	"name" 		: 	"marker",
@@ -41,6 +46,7 @@
 	"price" 	: 	32.99,
 	"src"		:	"items/markers.png",
 	"keyID"		:	5,
+	""		:	null
 	}
 	,
 	{
@@ -49,5 +55,6 @@
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"keyID"		:	6,
+	""		:	null
 	}
 ]
