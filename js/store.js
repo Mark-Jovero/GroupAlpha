@@ -112,10 +112,14 @@ dataRequest.onload = function e() {
 			}
 				while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
 				console.log(data[i]);
+				var description = data[i].desc;
+				if (description.length > 30) {
+					description = description.substring(0, 20) + "...[click for more]";
+				}
 					writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[i].src + "\'/>"
 					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b><br>"
-					 + data[i].desc + "</div>"
+					 + description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[i].price + "</div></div>"
 					 + "</div>";
 					i++;
