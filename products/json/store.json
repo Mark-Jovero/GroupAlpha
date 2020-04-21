@@ -3,6 +3,7 @@
 	{
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	22.99,
 	"src"		:	"items/pencil.png",
 	"page"		:	"productPage/pencil.html",
@@ -12,6 +13,7 @@
 	{
 	"name" 		: 	"pen",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	42.99,
 	"src"		:	"items/pen.png",
 	"page"		:	"productPage/pencil.html",
@@ -21,6 +23,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	1.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -30,6 +33,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	3.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -39,6 +43,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	13.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -48,6 +53,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	32.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -57,6 +63,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -66,6 +73,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -75,6 +83,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -84,6 +93,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -93,6 +103,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -102,6 +113,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -111,6 +123,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -120,6 +133,7 @@
 	{
 	"name" 		: 	"desk",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	132.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -129,6 +143,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -138,6 +153,7 @@
 	{
 	"name" 		: 	"laptop",
 	"type" 		: 	"technogy",
+	"desc"		:	"description goes here",
 	"price" 	: 	999.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -147,6 +163,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -156,6 +173,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -165,6 +183,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -174,6 +193,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
@@ -183,6 +203,7 @@
 	{
 	"name" 		: 	"marker",
 	"type" 		: 	"writing",
+	"desc"		:	"description goes here",
 	"price" 	: 	82.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
