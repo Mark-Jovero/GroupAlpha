@@ -42,9 +42,11 @@ dataRequest.onload = function e() {
 	
 	function displayShowMore() {
 		showMore[0].style.display = "block";
+		console.log("displayShowMore() called");
 	}
 	function hideShowMore() {
 		showMore[0].style.display = "none";
+		console.log("hideShowMore() called");
 	}
 	
 	function getKey(index) {
@@ -70,11 +72,11 @@ dataRequest.onload = function e() {
 			var current = data[list[i]].price;
 			var highestVal = 0;
 			var highestValLoc;
-			console.log("List is now: " + list);
+			//console.log("List is now: " + list);
 			for (var j = i; j < list.length; j++) {
 				var nextItem = data[list[j]].price;
 				if (i != j) {
-					console.log(current + " - " + nextItem);
+					//console.log(current + " - " + nextItem);
 					if (current < nextItem && highestVal < nextItem) {
 						//swap
 						var temp = list[j];
@@ -85,22 +87,21 @@ dataRequest.onload = function e() {
 					}
 				}
 			}
-			console.log("----HIGHEST IS: " + highestVal);
 		}
-		console.log("length: " + list.length);
-		console.log(list);
+		console.log("sortHighest() called; return: " + list);
 		return list;
 	}
 	
 	function sortLowest() {
 		var lowest = sortHighest();
 		lowest.reverse();
+		console.log("sortLowest() called; return: " + lowest);
 		return lowest;
 	}
 	
 	var i = 0;
 	function defaultView() {
-	console.log(data[0].keyID);
+	//console.log(data[0].keyID);
 		if (resetStatus == 1) {
 			resetStatus = 0;
 			i = 0;
@@ -111,7 +112,7 @@ dataRequest.onload = function e() {
 				displayShowMore();
 			}
 				while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
-				console.log(data[i]);
+				//console.log(data[i]);
 				var description = data[i].desc;
 				if (description.length > 30) {
 					var tempo = description.substring(20,description.length);
@@ -128,14 +129,16 @@ dataRequest.onload = function e() {
 					for(var p = 0; p < myDivs.length; p++) {
           				myDivs[p].addEventListener('click', function (event) {
           				clickedItemID = this.id;
-          				console.log(this.id);
+          				//console.log(this.id);
 						item_display_overlay.style.display = "block";
 						
-						item_display_content.innerHTML = "<img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> " + data[clickedItemID].name
-							+ "<br>" + data[clickedItemID].desc
-							+ "<br> Price: $" + data[clickedItemID].price 
-							+	"<br></b> <h3><font color=\'red\'>THIS IS UNDER CONSTRUCTION</font></h3>";
+						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
+							+ "\'><br><b> <h1>" + data[clickedItemID].name
+							+ "</b></h1>" + data[clickedItemID].desc
+							+ "<br><b> Price: $" + data[clickedItemID].price  
+							+ "</b><br><br><form>" + 
+							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' id=\'quantity\' name=\'quantity\'></form>"
+							+	"<div class=\'item-price\'>BUY NOW</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
 						
 						disableScrolling();
            			 });
@@ -181,11 +184,13 @@ dataRequest.onload = function e() {
           				console.log(data[clickedItemID].keyID);
 						item_display_overlay.style.display = "block";
 						
-						item_display_content.innerHTML = "<img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> " + data[clickedItemID].name
-							+ "<br>" + data[clickedItemID].desc
-							+ "<br> Price: $" + data[clickedItemID].price
-							+	"<br> <h3><font color=\'red\'>THIS IS UNDER CONSTRUCTION</font></h3>";
+						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
+							+ "\'><br><b> <h1>" + data[clickedItemID].name
+							+ "</b></h1>" + data[clickedItemID].desc
+							+ "<br><b> Price: $" + data[clickedItemID].price  
+							+ "</b><br><br><form>" + 
+							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' id=\'quantity\' name=\'quantity\'></form>"
+							+	"<div class=\'item-price\'>BUY NOW</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
 						
 						disableScrolling();
            			 });
@@ -199,6 +204,7 @@ dataRequest.onload = function e() {
 				hideShowMore();
 			}
 		}
+		console.log("highestView() called");
 	}
 	
 	function lowestView() {
@@ -228,11 +234,13 @@ dataRequest.onload = function e() {
           				clickedItemID = data[sorted[this.id]].keyID;
 						item_display_overlay.style.display = "block";
 						
-						item_display_content.innerHTML = "<img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> " + data[clickedItemID].name
-							+ "<br>" + data[clickedItemID].desc
-							+ "<br> Price: $" + data[clickedItemID].price
-							+	"<br> <h3><font color=\'red\'>THIS IS UNDER CONSTRUCTION</font></h3>";
+						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
+							+ "\'><br><b> <h1>" + data[clickedItemID].name
+							+ "</b></h1>" + data[clickedItemID].desc
+							+ "<br><b> Price: $" + data[clickedItemID].price  
+							+ "</b><br><br><form>" + 
+							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' id=\'quantity\' name=\'quantity\'></form>"
+							+	"<div class=\'item-price\'>BUY NOW</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
 						
 						disableScrolling();
            			 });
@@ -245,23 +253,25 @@ dataRequest.onload = function e() {
 				hideShowMore();
 			}
 		}
+		console.log("lowestView() called");
 	}
 	
 	function resetView() {
 		resetStatus = 1;
 		writeHere[0].innerHTML = "";
-		console.log("Reset called");
+		console.log("resetView() called");
 		defaultView();
 	}
 	
 	function clearView() {
 		resetStatus = 1;
 		writeHere[0].innerHTML = "";
-		console.log("Clear called");
+		console.log("clearView() called");
 	}
 	
 	function getItem() {
 		var itemID = document.getElementsByClassName("items");
+		
 
 	}
 	
@@ -269,10 +279,12 @@ dataRequest.onload = function e() {
     	var x=window.scrollX;
    	 	var y=window.scrollY;
    		window.onscroll=function(){window.scrollTo(x, y);};
+   		console.log("scrolling disabled");
 	}
 
 	function enableScrolling(){
     	window.onscroll=function(){};
+    	console.log("scrolling enabled");
 	}
 	
 	function main() {
@@ -289,8 +301,7 @@ dataRequest.onload = function e() {
 		}
 		
 		item_display_overlay.onclick = function() {
-			item_display_overlay.style.display = "none";
-			enableScrolling();
+
 		}
 		
 		var priceState = 0;
