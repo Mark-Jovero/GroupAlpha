@@ -4,210 +4,40 @@
 	"name" 		: 	"pencil",
 	"type" 		: 	"writing",
 	"desc"		:	"A pencil you can write with!",
-	"price" 	: 	22.99,
+	"price" 	: 	0.59,
 	"src"		:	"items/pencil.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	0,
 	""		:	null
 	},
 	{
-	"name" 		: 	"pen",
+	"name" 		: 	"Whiteboard (11x8)",
 	"type" 		: 	"writing",
-	"desc"		:	"This is a normal black pen!",
-	"price" 	: 	42.99,
-	"src"		:	"items/pen.png",
+	"desc"		:	"A whiteboard. 11 by 8 inches.",
+	"price" 	: 	10.99,
+	"src"		:	"items/11_8_board.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	1,
 	""		:	null
 	},
 	{
-	"name" 		: 	"marker",
+	"name" 		: 	"Whiteboard (48x36)",
 	"type" 		: 	"writing",
-	"desc"		:	"Extra thick marker!",
-	"price" 	: 	1.99,
-	"src"		:	"items/markers.png",
+	"desc"		:	"A big whiteboard. 48 by 36 inches.",
+	"price" 	: 	24.99,
+	"src"		:	"items/11_8_board.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	2,
 	""		:	null
 	},
 	{
-	"name" 		: 	"marker",
+	"name" 		: 	"Markers",
 	"type" 		: 	"writing",
-	"desc"		:	"some expensive marker.",
-	"price" 	: 	3.99,
+	"desc"		:	"A pencil you can write with!",
+	"price" 	: 	8.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	3,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"Long description test! This is a long description test! Long description!",
-	"price" 	: 	13.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	4,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	32.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	5,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	6,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"This is a paragraph-long description to test how JavaScript handles it. Cool. Cool. This is a paragraph-long description to test how JavaScript handles it. Cool. Cool.This is a paragraph-long description to test how JavaScript handles it. Cool. Cool.This is a paragraph-long description to test how JavaScript handles it. Cool. Cool.This is a paragraph-long description to test how JavaScript handles it. Cool. Cool. This is a paragraph-long description to test how JavaScript handles it. Cool. Cool.",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	7,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	8,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	9,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	10,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	11,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	12,
-	""		:	null
-	},
-	{
-	"name" 		: 	"desk",
-	"type" 		: 	"writing",
-	"desc"		:	"A brown writing desk.",
-	"price" 	: 	132.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	13,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	14,
-	""		:	null
-	},
-	{
-	"name" 		: 	"laptop",
-	"type" 		: 	"technogy",
-	"desc"		:	"A medium high-performance quality laptop.",
-	"price" 	: 	999.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	15,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	16,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Highlighter",
-	"type" 		: 	"writing",
-	"desc"		:	"Neon green joy!",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	17,
-	""		:	null
-	},
-	{
-	"name" 		: 	"marker",
-	"type" 		: 	"writing",
-	"desc"		:	"description goes here",
-	"price" 	: 	82.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	18,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Whiteout",
-	"type" 		: 	"writing",
-	"desc"		:	"Cover your mistakes.",
-	"price" 	: 	1.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	19,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Eraser",
-	"type" 		: 	"writing",
-	"desc"		:	"Erase your mistakes.",
-	"price" 	: 	0.99,
-	"src"		:	"items/markers.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	20,
 	""		:	null
 	}
 ]
