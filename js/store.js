@@ -281,6 +281,10 @@ dataRequest.onload = function e() {
 								buyFormButton[0].style.boxShadow = "none";
 							}
 						}
+						dispCol1 = document.getElementById("dispCol1");
+						if (data[clickedItemID].desc.length > 300) {
+							dispCol1.style.overflowY = "scroll";
+						}
 						disableScrolling();
            			 });
        				 }  
@@ -375,6 +379,10 @@ dataRequest.onload = function e() {
 								buyFormButton[0].style.color = "black";
 								buyFormButton[0].style.boxShadow = "none";
 							}
+						}
+						dispCol1 = document.getElementById("dispCol1");
+						if (data[clickedItemID].desc.length > 300) {
+							dispCol1.style.overflowY = "scroll";
 						}
 						disableScrolling();
            			 });
