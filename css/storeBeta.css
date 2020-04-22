@@ -125,13 +125,13 @@ body {
 
 .item-price-container:hover , .item-price-container:hover .item-price {
 	position: relative;
-	background-color: lightgreen;
-	color: black;
+	background-color: #B4B7C6;
+	color: white;
 }
 
 .item-price-container , .item-price-container .item-price {
 	position: relative;
-	background-color: green;
+	background-color: #8288a1;
 	color: white;
 	transition: background-color 0.1s linear, color 0.1s linear;
 }
@@ -148,7 +148,7 @@ body {
 	height: 30px;
 	margin-bottom: 30px;
 	text-align: center;
-	background-color: gray;
+	background-color: #8288a1;
 	color: white;
 	padding: 10px;
 	border-radius: 5px;
@@ -158,8 +158,8 @@ body {
 
 
 .shop_nav_container:hover {
-	background-color: silver;
-	color: black;
+	background-color: #B4B7C6;
+	color: white;
 	cursor: pointer;
 }
 
@@ -197,7 +197,7 @@ body {
 
 .sort .price, .sort .reset {
 	width: 100%;
-	background-color: gray;
+	background-color: #8288a1;
 	font-size: 20px;
 	text-align: center;
 	padding-top: 10px;
@@ -208,18 +208,17 @@ body {
 
 .sort .reset:hover {
 	width: 100%;
-	background-color: lightgray;
+	background-color: #B4B7C6;
 	font-size: 20px;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	color: black;
 }
 
 .dropdown1{
 	position: relative;
 	z-index: -10;
-	background-color: lightgray;
+	background-color: #aeb2c2;
 	cursor: pointer;
 }
 
@@ -240,16 +239,12 @@ body {
 	height: 30px;
 }
 
-.price:hover {
-	cursor: pointer;
-}
-
 .sort .price:hover .dropdown1{
 	display: block;
 }
 
 .sort .dropdown1:hover {
-	background-color: silver;
+	background-color: #9196ac;
 	color: white;
 }
 

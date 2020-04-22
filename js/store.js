@@ -14,6 +14,7 @@ var myDivs = document.getElementsByClassName('items');
 var ITEMS_PER_PAGE = 16;
 var nameValue = 0;
 var dispCol1 = document.getElementById("dispCol1");;
+var priceState = -1;
 
 
 
@@ -430,11 +431,15 @@ dataRequest.onload = function e() {
 	}
 	
 	function main() {
+		var e = document.getElementById("lowest");
+		var r = document.getElementById("highest");
 	
 		defaultView();
 		
 		reset[0].onclick = function() {
 			resetView();
+			r.style.backgroundColor = "";
+			e.style.backgroundColor = "";
 		}		
 		
 		item_x_display.onclick = function() {
@@ -446,35 +451,19 @@ dataRequest.onload = function e() {
 	
 		}
 		
-		var priceState = 0;
-		priceDivSort[0].onclick = function() {
-			var e = document.getElementById("lowest");
-			var r = document.getElementById("highest");
-			if (priceState == 0) { // open
-				e.style.zIndex = "1";
-				e.style.height = "30px";
-				r.style.zIndex = "1";
-				r.style.height = "30px";
-				priceState = 1
-				e.onclick = function() {
-					priceState = 0;
-					lowestView();
-				}
-				r.onclick = function() {
-					priceState = 0;
-					highestView();
-				}
-				priceDivSort[0].onclick = function() {
-					priceState = 1;
-				}
-			}
-			else if (priceState == 1) { // close
-				e.style.zIndex = "-10";
-				e.style.height = "30px";
-				r.style.zIndex = "-10";
-				r.style.height = "30px";
-				priceState = 0;
-			}
+		e.style.zIndex = "1";
+		e.style.height = "30px";
+		r.style.zIndex = "1";
+		r.style.height = "30px";
+		e.onclick = function() {
+			lowestView();
+			e.style.backgroundColor = "#676e89";
+			r.style.backgroundColor = "";
+		}
+		r.onclick = function() {
+			highestView();
+			r.style.backgroundColor = "#676e89";
+			e.style.backgroundColor = "";
 		}
 	}
 	main();
