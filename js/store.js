@@ -154,7 +154,7 @@ dataRequest.onload = function e() {
 								buyFormButton[0].style.cursor = "not-allowed";
 								buyFormButton[0].style.boxShadow = "none";
 							} else {
-								buyFormButton[0].style.backgroundColor = "lightgreen";
+								buyFormButton[0].style.backgroundColor = "green";
 								buyFormButton[0].style.cursor = "pointer";
 								buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
 							}
