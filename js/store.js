@@ -3,19 +3,21 @@ dataRequest.open('GET', 'https://mark-jovero.github.io/GroupAlpha/products/json/
 var data = 0;
 var b = 0;
 var count = 1;
+var itemCount = 0;
+var writeHere = document.getElementsByClassName("content");
+var showMore = document.getElementsByClassName("shop_nav_container");
+var reset = document.getElementsByClassName("reset");
+var highest = document.getElementById("highest");
+var lowest = document.getElementById("lowest");
+var priceDivSort = document.getElementsByClassName("price");
+var myDivs = document.getElementsByClassName('items');
+var ITEMS_PER_PAGE = 16;
+var nameValue = 0;
+
 
 
 dataRequest.onload = function e() {
 	var data = JSON.parse(dataRequest.responseText);
-	var writeHere = document.getElementsByClassName("content");
-	var showMore = document.getElementsByClassName("shop_nav_container");
-	var reset = document.getElementsByClassName("reset");
-	var highest = document.getElementById("highest");
-	var lowest = document.getElementById("lowest");
-	var priceDivSort = document.getElementsByClassName("price");
-	var myDivs = document.getElementsByClassName('items');
-	var itemCount = data.length;
-	var ITEMS_PER_PAGE = 16;
 	var pageNum = 1;
 	var lastPage = Math.ceil(itemCount / ITEMS_PER_PAGE);
 	var pageLocation = 1;
@@ -27,6 +29,7 @@ dataRequest.onload = function e() {
 	var item_display_content = document.getElementById("itemInfoContent");
 	var resetStatus = 0;
 	var clickedItemID = 0;
+	itemCount = data.length;
 	
 	function getItemCount() {
 		return itemCount;
@@ -136,10 +139,55 @@ dataRequest.onload = function e() {
 							+ "\'><br><b> <h1>" + data[clickedItemID].name
 							+ "</b></h1>" + data[clickedItemID].desc
 							+ "<br><b> Price: $" + data[clickedItemID].price  
-							+ "</b><br><br><form>" + 
-							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' id=\'quantity\' name=\'quantity\'></form>"
-							+	"<div class=\'item-price\'>BUY NOW</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
-						
+							+ "</b><br><br><div id=\'buy_form\'><form>" + 
+							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
+							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
+						nameValue = document.getElementById("quantity").value;
+						var buyFormButton = document.getElementsByClassName("item-price");
+						var formDiv = document.getElementById("buy_form");
+						console.log(nameValue + "---");
+						formDiv.onclick = function() {
+							nameValue = document.getElementById("quantity").value;
+							if (nameValue <= 0) {
+								buyFormButton[0].style.backgroundColor = "gray";
+								buyFormButton[0].style.color = "black";
+								buyFormButton[0].style.cursor = "not-allowed";
+								buyFormButton[0].style.boxShadow = "none";
+							} else {
+								buyFormButton[0].style.backgroundColor = "lightgreen";
+								buyFormButton[0].style.cursor = "pointer";
+								buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
+							}
+						}
+						item_display_overlay.onmouseover = function() {
+							nameValue = document.getElementById("quantity").value;
+							if (nameValue > 0) {
+								if (formActive == 1) {
+									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.color = "white";
+									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
+									formActive = 0;
+								}
+								buyFormButton[0].onmouseover = function() {
+									buyFormButton[0].style.backgroundColor = "lightgreen";
+									buyFormButton[0].style.color = "black";
+									buyFormButton[0].style.cursor = "pointer";
+									buyFormButton[0].style.boxShadow = "0 2px 5px 0px rgba(0, 0, 0, 0.5)";
+								}
+								buyFormButton[0].onmouseout = function() {
+									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.color = "white";
+									buyFormButton[0].style.cursor = "pointer";
+									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
+								}
+							} else {
+								formActive = 1;
+								buyFormButton[0].style.backgroundColor = "gray";
+								buyFormButton[0].style.cursor = "not-allowed";
+								buyFormButton[0].style.color = "black";
+								buyFormButton[0].style.boxShadow = "none";
+							}
+						}
 						disableScrolling();
            			 });
        				 } 
@@ -188,10 +236,43 @@ dataRequest.onload = function e() {
 							+ "\'><br><b> <h1>" + data[clickedItemID].name
 							+ "</b></h1>" + data[clickedItemID].desc
 							+ "<br><b> Price: $" + data[clickedItemID].price  
-							+ "</b><br><br><form>" + 
-							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' id=\'quantity\' name=\'quantity\'></form>"
-							+	"<div class=\'item-price\'>BUY NOW</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
-						
+							+ "</b><br><br><div id=\'buy_form\'><form>" + 
+							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
+							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
+						nameValue = document.getElementById("quantity").value;
+						var buyFormButton = document.getElementsByClassName("item-price");
+						var formDiv = document.getElementById("buy_form");
+						var formActive = 1;
+						console.log(nameValue + "---");
+						item_display_overlay.onmouseover = function() {
+							nameValue = document.getElementById("quantity").value;
+							if (nameValue > 0) {
+								if (formActive == 1) {
+									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.color = "white";
+									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
+									formActive = 0;
+								}
+								buyFormButton[0].onmouseover = function() {
+									buyFormButton[0].style.backgroundColor = "lightgreen";
+									buyFormButton[0].style.color = "black";
+									buyFormButton[0].style.cursor = "pointer";
+									buyFormButton[0].style.boxShadow = "0 2px 5px 0px rgba(0, 0, 0, 0.5)";
+								}
+								buyFormButton[0].onmouseout = function() {
+									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.color = "white";
+									buyFormButton[0].style.cursor = "pointer";
+									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
+								}
+							} else {
+								formActive = 1;
+								buyFormButton[0].style.backgroundColor = "gray";
+								buyFormButton[0].style.cursor = "not-allowed";
+								buyFormButton[0].style.color = "black";
+								buyFormButton[0].style.boxShadow = "none";
+							}
+						}
 						disableScrolling();
            			 });
        				 }  
@@ -238,10 +319,55 @@ dataRequest.onload = function e() {
 							+ "\'><br><b> <h1>" + data[clickedItemID].name
 							+ "</b></h1>" + data[clickedItemID].desc
 							+ "<br><b> Price: $" + data[clickedItemID].price  
-							+ "</b><br><br><form>" + 
-							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' id=\'quantity\' name=\'quantity\'></form>"
-							+	"<div class=\'item-price\'>BUY NOW</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
-						
+							+ "</b><br><br><div id=\'buy_form\'><form>" + 
+							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
+							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
+						nameValue = document.getElementById("quantity").value;
+						var buyFormButton = document.getElementsByClassName("item-price");
+						var formDiv = document.getElementById("buy_form");
+						console.log(nameValue + "---");
+						formDiv.onclick = function() {
+							nameValue = document.getElementById("quantity").value;
+							if (nameValue <= 0) {
+								buyFormButton[0].style.backgroundColor = "gray";
+								buyFormButton[0].style.color = "black";
+								buyFormButton[0].style.cursor = "not-allowed";
+								buyFormButton[0].style.boxShadow = "none";
+							} else {
+								buyFormButton[0].style.backgroundColor = "lightgreen";
+								buyFormButton[0].style.cursor = "pointer";
+								buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
+							}
+						}
+						item_display_overlay.onmouseover = function() {
+							nameValue = document.getElementById("quantity").value;
+							if (nameValue > 0) {
+								if (formActive == 1) {
+									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.color = "white";
+									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
+									formActive = 0;
+								}
+								buyFormButton[0].onmouseover = function() {
+									buyFormButton[0].style.backgroundColor = "lightgreen";
+									buyFormButton[0].style.color = "black";
+									buyFormButton[0].style.cursor = "pointer";
+									buyFormButton[0].style.boxShadow = "0 2px 5px 0px rgba(0, 0, 0, 0.5)";
+								}
+								buyFormButton[0].onmouseout = function() {
+									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.color = "white";
+									buyFormButton[0].style.cursor = "pointer";
+									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
+								}
+							} else {
+								formActive = 1;
+								buyFormButton[0].style.backgroundColor = "gray";
+								buyFormButton[0].style.cursor = "not-allowed";
+								buyFormButton[0].style.color = "black";
+								buyFormButton[0].style.boxShadow = "none";
+							}
+						}
 						disableScrolling();
            			 });
        				 } 
@@ -301,7 +427,7 @@ dataRequest.onload = function e() {
 		}
 		
 		item_display_overlay.onclick = function() {
-
+	
 		}
 		
 		var priceState = 0;
