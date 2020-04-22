@@ -14,9 +14,10 @@
 	margin-bottom: 20px;
 }
 
-.main img {
+.main .items img {
 	width: 250px;
 	height: 130px;
+	margin-left: 8%;
 }
 
  .content {
