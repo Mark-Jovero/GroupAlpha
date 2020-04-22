@@ -13,11 +13,13 @@ var priceDivSort = document.getElementsByClassName("price");
 var myDivs = document.getElementsByClassName('items');
 var ITEMS_PER_PAGE = 16;
 var nameValue = 0;
+var dispCol1 = document.getElementById("dispCol1");;
 
 
 
 dataRequest.onload = function e() {
 	var data = JSON.parse(dataRequest.responseText);
+	console.log("Successfully accessed file: " + "https://mark-jovero.github.io/GroupAlpha/products/json/store.json");
 	var pageNum = 1;
 	var lastPage = Math.ceil(itemCount / ITEMS_PER_PAGE);
 	var pageLocation = 1;
@@ -188,6 +190,12 @@ dataRequest.onload = function e() {
 								buyFormButton[0].style.boxShadow = "none";
 							}
 						}
+						
+						dispCol1 = document.getElementById("dispCol1");
+						if (data[clickedItemID].desc.length > 300) {
+							dispCol1.style.overflowY = "scroll";
+						}
+						
 						disableScrolling();
            			 });
        				 } 
