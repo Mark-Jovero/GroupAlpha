@@ -47,6 +47,7 @@ html {
 .items, .main img {
 	width: 200px;
 	height: 150px;
+	margin-left: 0;
 }
   
 }
@@ -70,6 +71,7 @@ body {
 .items, .main img {
 	width: 200px;
 	height: 150px;
+	margin-left: 0;
 }
   
 }
