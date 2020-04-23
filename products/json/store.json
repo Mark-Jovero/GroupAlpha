@@ -125,7 +125,7 @@
 	"type" 		: 	"writing",
 	"desc"		:	"A long-lasting lead 0.7 pencil. Comes with replacement erasers and lead refills.",
 	"price" 	: 	4.29,
-	"src"		:	"items/collegenotebook.png",
+	"src"		:	"items/mech_pencil_2.png",
 	"page"		:	"productPage/mech_pencil_2.html",
 	"keyID"		:	12,
 	""		:	null
