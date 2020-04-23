@@ -30,15 +30,15 @@ A website that sells office supplies!
   var itemImage = storeData[clickedExport].src;
   var itemCategory = storeData[clickedExport].type; // Type of product (paper, writing, art, etc.)
   ```
-  -Then, you can put it in an onclick event listener:
+  - Then, you can put it in mousemove event listener:
   ```
  window.onmousemove = function() {
       for(var p = 0; p < myDivs.length; p++) {
           myDivs[p].addEventListener('click', function (event) {
             buyFormButton[0].onclick = function() {
           		  console.log("User wants to buy " + storeData[clickedExport].name);
-            	}	
-		      });       				
+            		}	
+		});       				
 	    }
   }
   ```
