@@ -1,5 +1,3 @@
-var dataRequest = new XMLHttpRequest();
-dataRequest.open('GET', 'https://mark-jovero.github.io/GroupAlpha/products/json/store.json');
 var data = 0;
 var b = 0;
 var count = 1;
@@ -23,10 +21,9 @@ var pl;
 var clickedExport = 0;
 var data;
 
-dataRequest.onload = function e() {
-	data = JSON.parse(dataRequest.responseText);
+window.onload = function e() {
+	data = storeData;
 	pl = data;
-	console.log("Successfully accessed file: " + "https://mark-jovero.github.io/GroupAlpha/products/json/store.json");
 	var pageNum = 1;
 	var lastPage = Math.ceil(itemCount / ITEMS_PER_PAGE);
 	var pageLocation = 1;
@@ -226,6 +223,9 @@ dataRequest.onload = function e() {
 	
 	function highestView() {
 		clearView();
+		if (getItemCount() > ITEMS_PER_PAGE) {
+			displayShowMore();
+		}
 		var sorted = sortHighest();
 		var i = 0;
 		console.log(data[sorted[i]].src);
@@ -500,4 +500,3 @@ dataRequest.onload = function e() {
 	main();
 	
 };
-dataRequest.send();

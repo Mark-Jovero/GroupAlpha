@@ -1,5 +1,4 @@
-
-[
+var storeData = [
 	{
 	"name" 		: 	"Pencil (1PC)",
 	"type" 		: 	"writing",
