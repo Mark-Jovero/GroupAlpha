@@ -197,6 +197,16 @@
 	"price" 	: 	989.99,
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
+	"keyID"		:	19,
+	""		:	null
+	},
+	{
+	"name" 		: 	"Test Item",
+	"type" 		: 	"test",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	2.00,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
 	"keyID"		:	20,
 	""		:	null
 	},
@@ -328,16 +338,6 @@
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	33,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	34,
 	""		:	null
 	}
 	
