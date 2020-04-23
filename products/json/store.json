@@ -75,7 +75,7 @@
 	"type" 		: 	"writing",
 	"desc"		:	"All black ball point pen.",
 	"price" 	: 	2.99,
-	"src"		:	"items/ball-pen.png",
+	"src"		:	"items/ball_pen.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	7,
 	""		:	null
