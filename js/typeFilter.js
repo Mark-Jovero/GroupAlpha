@@ -43,5 +43,4 @@ function main() {
 
 document.addEventListener('mousemove', function() {
    main();
-   console.log("!!");
 }, false);
