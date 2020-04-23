@@ -39,5 +39,56 @@
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	3,
 	""		:	null
+	},
+	{
+	"name" 		: 	"Markers",
+	"type" 		: 	"writing",
+	"desc"		:	"A pencil you can write with!",
+	"price" 	: 	8.99,
+	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	4,
+	""		:	null
+	},
+	{
+	"name" 		: 	"Markers",
+	"type" 		: 	"writing",
+	"desc"		:	"A pencil you can write with!",
+	"price" 	: 	8.99,
+	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	5,
+	""		:	null
+	},
+	{
+	"name" 		: 	"Markers",
+	"type" 		: 	"writing",
+	"desc"		:	"A pencil you can write with!",
+	"price" 	: 	8.99,
+	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	6,
+	""		:	null
+	},
+	{
+	"name" 		: 	"Markers",
+	"type" 		: 	"writing",
+	"desc"		:	"A pencil you can write with!",
+	"price" 	: 	8.99,
+	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	7,
+	""		:	null
+	},
+	{
+	"name" 		: 	"Markers",
+	"type" 		: 	"writing",
+	"desc"		:	"A pencil you can write with!",
+	"price" 	: 	8.99,
+	"src"		:	"items/markers.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	8,
+	""		:	null
 	}
+	
 ]
