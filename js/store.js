@@ -329,8 +329,8 @@ dataRequest.onload = function e() {
 						item_display_overlay.style.display = "block";
 						
 						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> <h1>" + data[clickedItemID].name
-							+ "</b></h1>" + data[clickedItemID].desc
+							+ "\'><br><b> <h3>" + data[clickedItemID].name
+							+ "</b></h3>" + data[clickedItemID].desc
 							+ "<br><b> Price: $" + data[clickedItemID].price  
 							+ "</b><br><br><div id=\'buy_form\'><form>" + 
 							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
