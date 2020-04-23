@@ -30,6 +30,12 @@ A website that sells office supplies!
   var itemImage = storeData[clickedExport].src;
   var itemCategory = storeData[clickedExport].type; // Type of product (paper, writing, art, etc.)
   ```
+  -Then, you can put it in an onclick event listener:
+  ```
+  window.onclick = function() {
+      console.log(storeData[clickedExport].name);
+  }
+  ```
 
 ## Store now loads data from storeData.js
 - The .json file is located in [products/storeData.js](https://github.com/Mark-Jovero/GroupAlpha/blob/master/products/storeData.js).
