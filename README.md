@@ -1,6 +1,8 @@
 # Group Alpha
-AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH (**?**)
+AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH
+
 Public Website URL: **https://mark-jovero.github.io/GroupAlpha/**
+
 A website that sells office supplies!
 
 ## TODO [due APRIL 30th]
