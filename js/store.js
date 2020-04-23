@@ -15,11 +15,13 @@ var ITEMS_PER_PAGE = 16;
 var nameValue = 0;
 var dispCol1 = document.getElementById("dispCol1");;
 var priceState = -1;
-
-
+var pl;
+var clickedExport = 0;
+var data;
 
 dataRequest.onload = function e() {
-	var data = JSON.parse(dataRequest.responseText);
+	data = JSON.parse(dataRequest.responseText);
+	pl = data;
 	console.log("Successfully accessed file: " + "https://mark-jovero.github.io/GroupAlpha/products/json/store.json");
 	var pageNum = 1;
 	var lastPage = Math.ceil(itemCount / ITEMS_PER_PAGE);
@@ -95,6 +97,7 @@ dataRequest.onload = function e() {
 			}
 		}
 		console.log("sortHighest() called; return: " + list);
+		pl = list;
 		return list;
 	}
 	
@@ -102,6 +105,7 @@ dataRequest.onload = function e() {
 		var lowest = sortHighest();
 		lowest.reverse();
 		console.log("sortLowest() called; return: " + lowest);
+		pl = lowest;
 		return lowest;
 	}
 	
@@ -137,7 +141,7 @@ dataRequest.onload = function e() {
           				clickedItemID = this.id;
           				//console.log(this.id);
 						item_display_overlay.style.display = "block";
-						
+						clickedExport = data[clickedItemID].keyID;
 						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
 							+ "\'><br><b> <h1>" + data[clickedItemID].name
 							+ "</b></h1>" + data[clickedItemID].desc
@@ -239,6 +243,7 @@ dataRequest.onload = function e() {
           				myDivs[p].addEventListener('click', function (event) {
           				clickedItemID = data[sorted[this.id]].keyID;
           				console.log(data[clickedItemID].keyID);
+          				clickedExport = data[clickedItemID].keyID;
 						item_display_overlay.style.display = "block";
 						
 						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
@@ -327,7 +332,7 @@ dataRequest.onload = function e() {
           				myDivs[p].addEventListener('click', function (event) {
           				clickedItemID = data[sorted[this.id]].keyID;
 						item_display_overlay.style.display = "block";
-						
+						clickedExport = data[clickedItemID].keyID;
 						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
 							+ "\'><br><b> <h3>" + data[clickedItemID].name
 							+ "</b></h3>" + data[clickedItemID].desc
