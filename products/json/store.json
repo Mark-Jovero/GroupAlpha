@@ -81,7 +81,7 @@
 	""		:	null
 	},
 	{
-	"name" 		: 	"Notebook",
+	"name" 		: 	"College-Ruled Notebook",
 	"type" 		: 	"paper",
 	"desc"		:	"A single college-ruled notebook. 70 pages.",
 	"price" 	: 	0.49,
@@ -161,7 +161,7 @@
 	""		:	null
 	},
 	{
-	"name" 		: 	"Notebook",
+	"name" 		: 	"Wide-Ruled Notebook",
 	"type" 		: 	"paper",
 	"desc"		:	"Wide-ruled notebook. 70 pages.",
 	"price" 	: 	0.49,
