@@ -11,8 +11,28 @@ A website that sells office supplies!
   - Work on a cart system
   - Basic Login System
 
-## JSON File is now used for Store.html
-- The .json file is located in [products/json/store.json](https://github.com/Mark-Jovero/GroupAlpha/blob/master/products/json/store.json).
+## How to Access a Clicked Item's Data
+  - You can access the item that a user has clicked. To do so, it is important that your html head has the following:
+  ```
+  <head>
+<script src="[PATH]/storeData.js"></script> // stores data from the store
+<script src="[PATH]/js/store.js"></script> // returns clicked item ID
+<script src="your .js file"></script>
+  </head>
+  ```
+  - The store.js file returns several variables, but the important one is the **clickedExport** variable. **clickedExport** returns the keyID of the item that was clicked. This is a global variable, so as long as you follow the <head> format above, your .js will have access to it.
+  - Once you have **clickedExport**, you can get the item information using **storeData[clickedExport]**
+  - You can access the item's information by running these lines:
+  ```
+  var itemName = storeData[clickedExport].name;
+  var itemDescription = storeData[clickedExport].desc;
+  var itemPrice = storeData[clickedExport].price;
+  var itemImage = storeData[clickedExport].src;
+  var itemCategory = storeData[clickedExport].type; // Type of product (paper, writing, art, etc.)
+  ```
+
+## Store now loads data from storeData.js
+- The .json file is located in [products/storeData.js](https://github.com/Mark-Jovero/GroupAlpha/blob/master/products/storeData.js).
 - There are a lot of items in it, been testing.
 - Items can be added by following the format:
 ```
