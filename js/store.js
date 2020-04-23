@@ -165,7 +165,8 @@ dataRequest.onload = function e() {
 								buyFormButton[0].style.cursor = "not-allowed";
 								buyFormButton[0].style.boxShadow = "none";
 							} else {
-								buyFormButton[0].style.backgroundColor = "green";
+								buyFormButton[0].style.backgroundColor = "#8288a1";
+								buyFormButton[0].style.color = "white";
 								buyFormButton[0].style.cursor = "pointer";
 								buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
 							}
@@ -174,19 +175,19 @@ dataRequest.onload = function e() {
 							nameValue = document.getElementById("quantity").value;
 							if (nameValue > 0) {
 								if (formActive == 1) {
-									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.backgroundColor = "#8288a1";
 									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
 									formActive = 0;
 								}
 								buyFormButton[0].onmouseover = function() {
-									buyFormButton[0].style.backgroundColor = "lightgreen";
-									buyFormButton[0].style.color = "black";
+									buyFormButton[0].style.backgroundColor = "#B4B7C6";
+									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.cursor = "pointer";
 									buyFormButton[0].style.boxShadow = "0 2px 5px 0px rgba(0, 0, 0, 0.5)";
 								}
 								buyFormButton[0].onmouseout = function() {
-									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.backgroundColor = "#8288a1";
 									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.cursor = "pointer";
 									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
@@ -262,23 +263,37 @@ dataRequest.onload = function e() {
 						var formDiv = document.getElementById("buy_form");
 						var formActive = 1;
 						console.log(nameValue + "---");
+						formDiv.onclick = function() {
+							nameValue = document.getElementById("quantity").value;
+							if (nameValue <= 0) {
+								buyFormButton[0].style.backgroundColor = "gray";
+								buyFormButton[0].style.color = "black";
+								buyFormButton[0].style.cursor = "not-allowed";
+								buyFormButton[0].style.boxShadow = "none";
+							} else {
+								buyFormButton[0].style.backgroundColor = "#8288a1";
+								buyFormButton[0].style.color = "white";
+								buyFormButton[0].style.cursor = "pointer";
+								buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
+							}
+						}
 						item_display_overlay.onmouseover = function() {
 							nameValue = document.getElementById("quantity").value;
 							if (nameValue > 0) {
 								if (formActive == 1) {
-									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.backgroundColor = "#8288a1";
 									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
 									formActive = 0;
 								}
 								buyFormButton[0].onmouseover = function() {
-									buyFormButton[0].style.backgroundColor = "lightgreen";
-									buyFormButton[0].style.color = "black";
+									buyFormButton[0].style.backgroundColor = "#B4B7C6";
+									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.cursor = "pointer";
 									buyFormButton[0].style.boxShadow = "0 2px 5px 0px rgba(0, 0, 0, 0.5)";
 								}
 								buyFormButton[0].onmouseout = function() {
-									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.backgroundColor = "#8288a1";
 									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.cursor = "pointer";
 									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
@@ -356,7 +371,8 @@ dataRequest.onload = function e() {
 								buyFormButton[0].style.cursor = "not-allowed";
 								buyFormButton[0].style.boxShadow = "none";
 							} else {
-								buyFormButton[0].style.backgroundColor = "lightgreen";
+								buyFormButton[0].style.backgroundColor = "#8288a1";
+								buyFormButton[0].style.color = "white";
 								buyFormButton[0].style.cursor = "pointer";
 								buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
 							}
@@ -365,19 +381,19 @@ dataRequest.onload = function e() {
 							nameValue = document.getElementById("quantity").value;
 							if (nameValue > 0) {
 								if (formActive == 1) {
-									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.backgroundColor = "#8288a1";
 									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
 									formActive = 0;
 								}
 								buyFormButton[0].onmouseover = function() {
-									buyFormButton[0].style.backgroundColor = "lightgreen";
-									buyFormButton[0].style.color = "black";
+									buyFormButton[0].style.backgroundColor = "#B4B7C6";
+									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.cursor = "pointer";
 									buyFormButton[0].style.boxShadow = "0 2px 5px 0px rgba(0, 0, 0, 0.5)";
 								}
 								buyFormButton[0].onmouseout = function() {
-									buyFormButton[0].style.backgroundColor = "green";
+									buyFormButton[0].style.backgroundColor = "#8288a1";
 									buyFormButton[0].style.color = "white";
 									buyFormButton[0].style.cursor = "pointer";
 									buyFormButton[0].style.boxShadow = "0 1px 3px 0px rgba(0, 0, 0, 0.5)";
