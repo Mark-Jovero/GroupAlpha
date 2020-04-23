@@ -13,7 +13,11 @@ var priceDivSort = document.getElementsByClassName("price");
 var myDivs = document.getElementsByClassName('items');
 var ITEMS_PER_PAGE = 16;
 var nameValue = 0;
-var dispCol1 = document.getElementById("dispCol1");;
+var dispCol1 = document.getElementById("dispCol1");
+var item_x_display;
+var item_display;
+var item_display_overlay;
+var item_display_content;
 var priceState = -1;
 var pl;
 var clickedExport = 0;
@@ -28,10 +32,10 @@ dataRequest.onload = function e() {
 	var pageLocation = 1;
 	var displayedItems = 0;
 	var getSortDropDownItems = document.getElementsByClassName("dropdown");
-	var item_x_display = document.getElementById("x-button");
-	var item_display = document.getElementById("itemInfoPopUp");
-	var item_display_overlay = document.getElementById("popupCover");
-	var item_display_content = document.getElementById("itemInfoContent");
+	item_x_display = document.getElementById("x-button");
+	item_display = document.getElementById("itemInfoPopUp");
+	item_display_overlay = document.getElementById("popupCover");
+	item_display_content = document.getElementById("itemInfoContent");
 	var resetStatus = 0;
 	var clickedItemID = 0;
 	itemCount = data.length;
@@ -97,7 +101,6 @@ dataRequest.onload = function e() {
 			}
 		}
 		console.log("sortHighest() called; return: " + list);
-		pl = list;
 		return list;
 	}
 	
@@ -105,7 +108,6 @@ dataRequest.onload = function e() {
 		var lowest = sortHighest();
 		lowest.reverse();
 		console.log("sortLowest() called; return: " + lowest);
-		pl = lowest;
 		return lowest;
 	}
 	
@@ -148,7 +150,7 @@ dataRequest.onload = function e() {
 							+ "<br><b> Price: $" + data[clickedItemID].price  
 							+ "</b><br><br><div id=\'buy_form\'><form>" + 
 							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
-							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
+							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";
 						nameValue = document.getElementById("quantity").value;
 						var buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
@@ -252,7 +254,7 @@ dataRequest.onload = function e() {
 							+ "<br><b> Price: $" + data[clickedItemID].price  
 							+ "</b><br><br><div id=\'buy_form\'><form>" + 
 							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
-							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
+							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";
 						nameValue = document.getElementById("quantity").value;
 						var buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
@@ -339,7 +341,7 @@ dataRequest.onload = function e() {
 							+ "<br><b> Price: $" + data[clickedItemID].price  
 							+ "</b><br><br><div id=\'buy_form\'><form>" + 
 							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
-							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> <font color=\'black\'>RELATED ITEMS HERE?</font><div>";
+							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> div>";
 						nameValue = document.getElementById("quantity").value;
 						var buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
