@@ -456,11 +456,17 @@ dataRequest.onload = function e() {
 		r.style.zIndex = "1";
 		r.style.height = "30px";
 		e.onclick = function() {
+			resetStatus = 1;
+			pageLocation = 1;
+			writeHere[0].innerHTML = "";
 			lowestView();
 			e.style.backgroundColor = "#676e89";
 			r.style.backgroundColor = "";
 		}
 		r.onclick = function() {
+			resetStatus = 1;
+			pageLocation = 1;
+			writeHere[0].innerHTML = "";
 			highestView();
 			r.style.backgroundColor = "#676e89";
 			e.style.backgroundColor = "";
