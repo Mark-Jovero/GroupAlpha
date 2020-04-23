@@ -15,9 +15,9 @@ A website that sells office supplies!
   - You can access the item that a user has clicked. To do so, it is important that your html head has the following:
   ```
   <head>
-  	<script src="[PATH]/storeData.js"></script> // stores data from the store
-	<script src="[PATH]/js/store.js"></script> // returns clicked item ID
-  	<script src="your .js file"></script>
+<script src="[PATH]/storeData.js"></script> // stores data from the store
+<script src="[PATH]/js/store.js"></script> // returns clicked item ID
+<script src="your .js file"></script>
   </head>
   ```
   - The store.js file returns several variables, but the important one is the **clickedExport** variable. **clickedExport** returns the keyID of the item that was clicked. This is a global variable, so as long as you follow the <head> format above, your .js will have access to it.
