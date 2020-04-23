@@ -10,16 +10,16 @@ A website that sells office supplies!
 ```
 {
 "name"  :   "item name",
-"type"  :   "item classification",
-"desc"  :   "description of the item",
+"type"  :   "item classification", // groups items together. Used for displaying "Related Items". Also is added to store sort type.
+"desc"  :   "description of the item", // Automatically displays this in the store page.
 "price" :   integer/double/float, // no quotation marks
-"src"   :   "items/____.png", // Source of image
-"page"  :   "productPage/___.html", // This is going to be implemented in the coming days, hopefully...
+"src"   :   "items/____.png", // Source of image. Preferabbly on a white or transparent background.
 "keyID" :   integer //, // follow the order. ie 0, 1, 2 ...
 ""      :   null // you must include this in the last line, or the file breaks :(
 } <-(If you're adding multiple items, don't forget to add a comma here!)
 ```
 - Items are sorted in the store.js file. If a user chooses to sort by price, the js program will do the sorting.
+- The type is used for displaying similar items--this is done in relatedItems.js. Type is also used to sort the store. Adding a new type will automatically add the type to the store type sort.
 - Please let me know if there are any issues viewing it, or if there are viewing glitches! Thanks.
 
 ## How to Use GENERIC.html
