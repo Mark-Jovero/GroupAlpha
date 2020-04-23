@@ -1,4 +1,5 @@
 var array = [];
+var tracker = 0;
 function loadTypes() {
 	console.log("Loading item types...");
 	for (var i = 0; i < data.length; i++) {
@@ -32,8 +33,8 @@ function clearView() {
 var writeCat = document.getElementsByClassName("item_type");
 function writeCategories() {
 	console.log("Writing item types to div...");
-	for (var i = 0; i < array.length; i++) {
-		writeCat[0].innerHTML += "<div class=\'category\'>" + array[i] + "</div>";
+	for (tracker; tracker < array.length; tracker++) {
+		writeCat[0].innerHTML += "<div class=\'category\'>" + array[tracker] + "</div>";
 	}
 	console.log("Item types written.");
 }	
@@ -44,6 +45,10 @@ function main() {
 	loadTypes();
 	// had to call loadTypes() multiple times.. for some reason it would not load properly sometimes.
 	writeCategories();
+}
+
+document.onload = function() {
+	main();
 }
 
 window.onload = function() {
