@@ -10,7 +10,14 @@ font {
 
 table {
 	height: 100%;
+	table-layout: fixed;
 }
+
+.gap-right, .gap-left {
+	width: 20%; 
+}
+	
+
 
 .middle {
 	border-left: 1.5px solid #d1d1d1;
@@ -23,4 +30,81 @@ hr {
 
 a:hover {
 	color: lightblue;
+}
+
+@media all and (max-width: 800px) {
+  /* For mobile phones: */
+	
+	table {
+		table-layout: fixed;
+		padding: 10px;
+	}
+  	font {
+		color: white;
+	}
+	
+	#tcolumns {
+		width: 100% !important;
+	}
+	
+	#tcolumns a {
+		font-size: 13px;
+	}
+	
+	.gap-right, .gap-left {
+		width: 0; 
+	}
+	
+	
+	.label font {
+		font-size: 16px !important;
+	}
+	.container {
+		position: relative;
+		margin-top: -20px;
+	}
+	
+	#cr {
+		width: 0;
+		display: none;
+	}
+  
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+  /* For large mobile phones / tablets */
+  
+  table {
+		table-layout: fixed;
+		padding: 10px;
+	}
+  	font {
+		color: white;
+	}
+	
+	#tcolumns {
+		width: 100% !important;
+	}
+	
+	#tcolumns a {
+		font-size: 18px;
+	}
+	
+	.gap-right, .gap-left {
+		width: 0; 
+	}
+	
+	
+	.label font {
+		font-size: 22px !important;
+	}
+	.container {
+		position: relative;
+		margin-top: -20px;
+	}
+	
+	#cr {
+		width: 0;
+		display: none;
+	}
 }

@@ -4,6 +4,10 @@
 	--cart-bg-color: white;
 }
 
+* {
+	
+}
+
 
 .container_grid {
 	display: grid;
@@ -74,5 +78,23 @@
 	background-color: #8288a1 !important;
 	bottom: 0px;
 	min-height: 200px;
+}
+
+@media all and (max-width: 800px) {
+
+	.footer iframe {
+		position: relative;
+		left: -10px;
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 800px) and (max-width: 1200px) {
+  /* For large mobile phones / tablets */
+  .footer iframe {
+	position: relative;
+	left: -10px;
+	height: 200px;
+	}
 }
 
