@@ -12,7 +12,7 @@
 	},
 	{
 	"name" 		: 	"Whiteboard (11x8)",
-	"type" 		: 	"writing",
+	"type" 		: 	"office",
 	"desc"		:	"A whiteboard. 11 by 8 inches.",
 	"price" 	: 	10.99,
 	"src"		:	"items/11_8_board.png",
@@ -22,7 +22,7 @@
 	},
 	{
 	"name" 		: 	"Whiteboard (48x36)",
-	"type" 		: 	"writing",
+	"type" 		: 	"office",
 	"desc"		:	"A big whiteboard. 48 by 36 inches.",
 	"price" 	: 	24.99,
 	"src"		:	"items/48_board.png",
