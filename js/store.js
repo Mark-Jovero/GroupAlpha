@@ -125,6 +125,8 @@ dataRequest.onload = function e() {
 			}
 				while (i+1 <= getItemCount() && i+1 <= pageLocation*ITEMS_PER_PAGE) {
 				//console.log(data[i]);
+				var itemPrice = data[i].price;
+				
 				var description = data[i].desc;
 				if (description.length > 30) {
 					var tempo = description.substring(20,description.length);
@@ -135,7 +137,7 @@ dataRequest.onload = function e() {
 			 		 + "<img src=\'" + data[i].src + "\'/>"
 					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b><br>"
 					 + description + "</div>"
-					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[i].price + "</div></div>"
+					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + itemPrice + "</div></div>"
 					 + "</div>";
 					i++;
 					for(var p = 0; p < myDivs.length; p++) {

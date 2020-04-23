@@ -1,5 +1,6 @@
 var array = [];
 function loadTypes() {
+	console.log("Loading item types...");
 	for (var i = 0; i < data.length; i++) {
 		if (array.length > 0) { // not empty
 			if (array.indexOf(data[i].type) == -1) { // if array does not contain category
@@ -10,6 +11,7 @@ function loadTypes() {
 		}
 	}
 	array.sort();
+	console.log("Item types loaded.");
 }
 
 function resetView() {
@@ -27,13 +29,18 @@ function clearView() {
 
 var writeCat = document.getElementsByClassName("item_type");
 function writeCategories() {
+	console.log("Writing item types to div...");
 	for (var i = 0; i < array.length; i++) {
 		writeCat[0].innerHTML += "<div class=\'category\'>" + array[i] + "</div>";
 	}
+	console.log("Item types written.");
 }	
 
 function main() {
 	loadTypes();
+	loadTypes();
+	loadTypes();
+	// had to call loadTypes() multiple times.. for some reason it would not load properly sometimes.
 	writeCategories();
 }
 
