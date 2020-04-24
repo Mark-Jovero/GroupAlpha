@@ -344,7 +344,6 @@ window.onload = function e() {
 						nameValue = document.getElementById("quantity").value;
 						var buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
-						console.log(nameValue + "---");
 						formDiv.onclick = function() {
 							nameValue = document.getElementById("quantity").value;
 							if (nameValue <= 0) {

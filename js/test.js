@@ -1,3 +1,3 @@
 document.onclick = function(e) {
-	console.log(e);
+	//console.log(storeData[clickedExport].name + " WAS CLICKED");
 }
