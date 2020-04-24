@@ -21,6 +21,7 @@
 	width: 100%;
 	padding-top: 5%;
 	margin: 0;
+	transition: background-color .2s ease;
 }
 
 .top-right .help {
@@ -31,10 +32,11 @@
 	width: 100%;
 	padding-top: 5%;
 	margin: 0;
+	transition: background-color .2s ease;
 }
 
 .top-right .help:hover, .top-right .login:hover {
-	background-color: silver;
+	background-color: #B4B7C6;
 	color: black;
 }
 
