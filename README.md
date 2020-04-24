@@ -30,6 +30,19 @@ A website that sells office supplies!
   var itemImage = storeData[clickedExport].src;
   var itemCategory = storeData[clickedExport].type; // Type of product (paper, writing, art, etc.)
   ```
+  - Then, you can put it in mousemove event listener:
+  ```
+ window.onmousemove = function() {
+      for(var p = 0; p < myDivs.length; p++) {
+          myDivs[p].addEventListener('click', function (event) {
+            buyFormButton[0].onclick = function() {
+          		  console.log("User wants to buy " + storeData[clickedExport].name);
+            		}	
+		});       				
+	    }
+  }
+  ```
+ - The above code will retrieve the name of the clicked item, when they click the "Add To Cart" button.
 
 ## Store now loads data from storeData.js
 - The .json file is located in [products/storeData.js](https://github.com/Mark-Jovero/GroupAlpha/blob/master/products/storeData.js).
