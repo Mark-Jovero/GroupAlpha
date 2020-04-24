@@ -93,8 +93,6 @@ body {
 	display: none;
 }
 
-
-
 .reset {
 	top: -150px !important;
 	left: 330px;
@@ -445,6 +443,7 @@ body {
 	background-color: #aeb2c2;
 	cursor: pointer;
 	font-size: 20px;
+	transition: background-color .2s ease;
 }
 
 .reset {
@@ -560,11 +559,10 @@ body {
 	cursor: pointer;
 }
 
-#x-button:hover {
-	background-color: rgba(0,0,0,0.45);
+* {
+	transition: background-color .2s ease;
 }
 
-.items #invis {
-	box-shadow: none;
-	z-index: -1000;
+#x-button:hover {
+	background-color: rgba(0,0,0,0.45);
 }

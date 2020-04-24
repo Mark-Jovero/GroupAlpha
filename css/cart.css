@@ -70,11 +70,7 @@
 	background-color: var(--cart-bg-color);
 }
 
-.top-right > .cart:hover {
-
-}
-
-.top-right > .cart > .cart_content { /*default*/
+.top-right > .cart > .cart_content {
 	position: absolute;
 	right: -1px;
 	display: none;

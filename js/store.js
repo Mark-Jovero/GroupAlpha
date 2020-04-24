@@ -438,7 +438,7 @@ window.onload = function e() {
 	}
 	
 	function main() {
-		displayPopUp(clickedItemID);
+		
 		var e = document.getElementById("lowest");
 		var r = document.getElementById("highest");
 	
@@ -468,16 +468,12 @@ window.onload = function e() {
 			pageLocation = 1;
 			writeHere[0].innerHTML = "";
 			lowestView();
-			e.style.backgroundColor = "#676e89";
-			r.style.backgroundColor = "";
 		}
 		r.onclick = function() {
 			resetStatus = 1;
 			pageLocation = 1;
 			writeHere[0].innerHTML = "";
 			highestView();
-			r.style.backgroundColor = "#676e89";
-			e.style.backgroundColor = "";
 		}
 	}
 	main();

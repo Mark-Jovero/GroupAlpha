@@ -39,16 +39,11 @@ window.onclick = function() {
 				array.push(data[i].keyID);
 			}
 		}
+		//displayPopup(clickedExport);
 		console.log(array);
 		return array;
 	
 	}
-}
-
-var buyButton = document.getElementsByClassName("item-price");
-
-buyButton.onclick = function() {
-	console.log("CLICK!");
 }
 
 function randomInt(max) {
