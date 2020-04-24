@@ -20,8 +20,7 @@ var storeData = [
 	"price" 	: 	0.59,
 	"src"		:	"items/pencil.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	0,
-	""		:	null
+	"keyID"		:	0
 	},
 	{
 	"name" 		: 	"Whiteboard (11x8)",
@@ -30,8 +29,7 @@ var storeData = [
 	"price" 	: 	10.99,
 	"src"		:	"items/11_8_board.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	1,
-	""		:	null
+	"keyID"		:	1
 	},
 	{
 	"name" 		: 	"Whiteboard (48x36)",
@@ -40,8 +38,7 @@ var storeData = [
 	"price" 	: 	24.99,
 	"src"		:	"items/48_board.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	2,
-	""		:	null
+	"keyID"		:	2
 	},
 	{
 	"name" 		: 	"Markers (8PC)",
@@ -50,8 +47,7 @@ var storeData = [
 	"price" 	: 	8.99,
 	"src"		:	"items/markers.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	3,
-	""		:	null
+	"keyID"		:	3
 	},
 	{
 	"name" 		: 	"Chalk White (2PC)",
@@ -60,8 +56,7 @@ var storeData = [
 	"price" 	: 	0.99,
 	"src"		:	"items/chalk.png",
 	"page"		:	"productPage/chalk.html",
-	"keyID"		:	4,
-	""		:	null
+	"keyID"		:	4
 	},
 	{
 	"name" 		: 	"Assorted Chalk (8PC)",
@@ -70,8 +65,7 @@ var storeData = [
 	"price" 	: 	4.99,
 	"src"		:	"items/assorted_chalk.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	5,
-	""		:	null
+	"keyID"		:	5
 	},
 	{
 	"name" 		: 	"Ball Point Pen (10PC)",
@@ -80,8 +74,7 @@ var storeData = [
 	"price" 	: 	8.99,
 	"src"		:	"items/ball_pen_10.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	6,
-	""		:	null
+	"keyID"		:	6
 	},
 	{
 	"name" 		: 	"Ball Pen (2PC)",
@@ -90,8 +83,7 @@ var storeData = [
 	"price" 	: 	2.99,
 	"src"		:	"items/ball_pen.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	7,
-	""		:	null
+	"keyID"		:	7
 	},
 	{
 	"name" 		: 	"College-Ruled Notebook",
@@ -100,8 +92,7 @@ var storeData = [
 	"price" 	: 	0.49,
 	"src"		:	"items/collegenotebook.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	8,
-	""		:	null
+	"keyID"		:	8
 	},
 	{
 	"name" 		: 	"Cra-Z-Art Crayons",
@@ -110,8 +101,7 @@ var storeData = [
 	"price" 	: 	6.99,
 	"src"		:	"items/crayons_96.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	9,
-	""		:	null
+	"keyID"		:	9
 	},
 	{
 	"name" 		: 	"Dry Erase Markers (24)",
@@ -120,8 +110,7 @@ var storeData = [
 	"price" 	: 	3.99,
 	"src"		:	"items/dry_erase_24.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	10,
-	""		:	null
+	"keyID"		:	10
 	},
 	{
 	"name" 		: 	"Gel Pen (2PC)",
@@ -130,8 +119,7 @@ var storeData = [
 	"price" 	: 	3.99,
 	"src"		:	"items/gel_pen.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	11,
-	""		:	null
+	"keyID"		:	11
 	},
 	{
 	"name" 		: 	"Premium Mechanical Pencil (2PC)",
@@ -140,8 +128,7 @@ var storeData = [
 	"price" 	: 	4.29,
 	"src"		:	"items/mech_pencil_2.png",
 	"page"		:	"productPage/mech_pencil_2.html",
-	"keyID"		:	12,
-	""		:	null
+	"keyID"		:	12
 	},
 	{
 	"name" 		: 	"Mechanical Pencils (10PC)",
@@ -150,8 +137,7 @@ var storeData = [
 	"price" 	: 	3.99,
 	"src"		:	"items/mech_pencil_10.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	13,
-	""		:	null
+	"keyID"		:	13
 	},
 	{
 	"name" 		: 	"Premium Pencil (6PC)",
@@ -160,8 +146,7 @@ var storeData = [
 	"price" 	: 	3.99,
 	"src"		:	"items/premium_pencil_6.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	14,
-	""		:	null
+	"keyID"		:	14
 	},
 	{
 	"name" 		: 	"Assorted Sharpie (12PC)",
@@ -170,8 +155,7 @@ var storeData = [
 	"price" 	: 	12.99,
 	"src"		:	"items/sharpie_assorted.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	15,
-	""		:	null
+	"keyID"		:	15
 	},
 	{
 	"name" 		: 	"Wide-Ruled Notebook",
@@ -180,8 +164,7 @@ var storeData = [
 	"price" 	: 	0.49,
 	"src"		:	"items/widenotebook.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	16,
-	""		:	null
+	"keyID"		:	16
 	},
 	{
 	"name" 		: 	"Desk",
@@ -190,8 +173,7 @@ var storeData = [
 	"price" 	: 	89.99,
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	17,
-	""		:	null
+	"keyID"		:	17
 	},
 	{
 	"name" 		: 	"HP Laptop DV5",
@@ -200,8 +182,7 @@ var storeData = [
 	"price" 	: 	729.99,
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	18,
-	""		:	null
+	"keyID"		:	18
 	},
 	{
 	"name" 		: 	"Google Chromebook",
@@ -210,199 +191,7 @@ var storeData = [
 	"price" 	: 	989.99,
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
-	"keyID"		:	19,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	20,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	21,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	22,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	23,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	24,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	25,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	26,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	27,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	28,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	29,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	30,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	31,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	32,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	33,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	34,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	35,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	36,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	37,
-	""		:	null
-	},
-	{
-	"name" 		: 	"Test Item",
-	"type" 		: 	"test",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	2.00,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	38,
-	""		:	null
+	"keyID"		:	19
 	}
-	
 	
 ]
