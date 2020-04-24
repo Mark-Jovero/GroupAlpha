@@ -10,7 +10,6 @@ function displayPopUp(itemID) {
 		+ "</b><br><br><div id=\'buy_form\'><form>" + 
 		"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
 	+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";
-	console.log("!@#");
 }
 
 var storeData = [
