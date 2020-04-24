@@ -56,7 +56,6 @@ A website that sells office supplies!
 "price" :   integer/double/float, // no quotation marks
 "src"   :   "items/____.png", // Source of image. Preferabbly on a white or transparent background.
 "keyID" :   integer, // follow the order. ie 0, 1, 2 ...
-""      :   null // you must include this in the last line, or the file breaks :(
 } <-(If you're adding multiple items, don't forget to add a comma here!)
 ```
 ##### DONT FORGET TO REMOVE THE COMMENTED PARTS (//). JSON HATES THAT :(
