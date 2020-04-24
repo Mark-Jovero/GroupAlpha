@@ -29,18 +29,46 @@ function clearView() {
 var writeCat = document.getElementsByClassName("item_type");
 function writeCategories() {
 	for (tracker; tracker < array.length; tracker++) {
-		writeCat[0].innerHTML += "<div class=\'category\'>" + array[tracker] + "</div>";
+		writeCat[0].innerHTML += "<div class=\'category\' onclick=\'getClass(this)\'>" + array[tracker] + "</div>";
 	}
-}	
+}
 
 function main() {
 	loadTypes();
-	loadTypes();
-	loadTypes();
-	// had to call loadTypes() multiple times.. for some reason it would not load properly sometimes.
 	writeCategories();
+	
+}
+var categs = document.getElementsByClassName("category");
+function getClass(m) {
+	var itemsDisplayed = 0;
+	writeHere[0].innerHTML = "";
+	var displayCategoryItems = m.textContent;
+	for (var i = 0; i < storeData.length; i++) {
+		var fixedCase = storeData[i].type;
+		var description = data[i].desc;
+		if (description.length > 30) {
+			var tempo = description.substring(20,description.length);
+			var spaceLoc = 20 + tempo.search(" ");
+			description = description.substring(0, spaceLoc) + "... <font id=\'longDescButton\' color=\'blue\'>[more]</font>";
+		}
+		fixedCase = fixedCase.substring(0,1).toUpperCase() + storeData[i].type.substring(1, storeData[i].type.length);
+		if (fixedCase == displayCategoryItems) {
+			itemsDisplayed++;
+			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + storeData[i].keyID + "\'>"
+			 		 + "<img src=\'" + storeData[i].src + "\'/>"
+					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + storeData[i].name + "</font></b><br>"
+					 + description + "</div>"
+					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + storeData[i].price + "</div></div>"
+					 + "</div>";
+		}
+	}
+	if (itemsDisplayed < ITEMS_PER_PAGE) {
+		hideShowMore();
+	}
+	
 }
 
 document.addEventListener('mousemove', function() {
    main();
+   
 }, false);

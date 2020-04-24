@@ -20,6 +20,16 @@ var priceState = -1;
 var pl;
 var clickedExport = 0;
 var data;
+var buyFormButton;
+
+	function displayShowMore() {
+		showMore[0].style.display = "block";
+		console.log("displayShowMore() called");
+	}
+	function hideShowMore() {
+		showMore[0].style.display = "none";
+		console.log("hideShowMore() called");
+	}
 
 window.onload = function e() {
 	data = storeData;
@@ -47,15 +57,6 @@ window.onload = function e() {
 	
 	function displayedItems() {
 		return displayedItems;
-	}
-	
-	function displayShowMore() {
-		showMore[0].style.display = "block";
-		console.log("displayShowMore() called");
-	}
-	function hideShowMore() {
-		showMore[0].style.display = "none";
-		console.log("hideShowMore() called");
 	}
 	
 	function getKey(index) {
@@ -143,15 +144,9 @@ window.onload = function e() {
           				//console.log(this.id);
 						item_display_overlay.style.display = "block";
 						clickedExport = data[clickedItemID].keyID;
-						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> <h1>" + data[clickedItemID].name
-							+ "</b></h1>" + data[clickedItemID].desc
-							+ "<br><b> Price: $" + data[clickedItemID].price  
-							+ "</b><br><br><div id=\'buy_form\'><form>" + 
-							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
-							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";
+						displayPopUp(clickedItemID);
 						nameValue = document.getElementById("quantity").value;
-						var buyFormButton = document.getElementsByClassName("item-price");
+						buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
 						console.log(nameValue + "---");
 						formDiv.onclick = function() {
@@ -249,17 +244,10 @@ window.onload = function e() {
           				clickedItemID = data[sorted[this.id]].keyID;
           				console.log(data[clickedItemID].keyID);
           				clickedExport = data[clickedItemID].keyID;
-						item_display_overlay.style.display = "block";
-						
-						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> <h1>" + data[clickedItemID].name
-							+ "</b></h1>" + data[clickedItemID].desc
-							+ "<br><b> Price: $" + data[clickedItemID].price  
-							+ "</b><br><br><div id=\'buy_form\'><form>" + 
-							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
-							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";
+						item_display_overlay.style.display = "block";					
+						displayPopUp(clickedItemID);
 						nameValue = document.getElementById("quantity").value;
-						var buyFormButton = document.getElementsByClassName("item-price");
+						buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
 						var formActive = 1;
 						console.log(nameValue + "---");
@@ -352,13 +340,7 @@ window.onload = function e() {
           				clickedItemID = data[sorted[this.id]].keyID;
 						item_display_overlay.style.display = "block";
 						clickedExport = data[clickedItemID].keyID;
-						item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + data[clickedItemID].src
-							+ "\'><br><b> <h3>" + data[clickedItemID].name
-							+ "</b></h3>" + data[clickedItemID].desc
-							+ "<br><b> Price: $" + data[clickedItemID].price  
-							+ "</b><br><br><div id=\'buy_form\'><form>" + 
-							"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
-							+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b> div>";
+						displayPopUp(clickedItemID);
 						nameValue = document.getElementById("quantity").value;
 						var buyFormButton = document.getElementsByClassName("item-price");
 						var formDiv = document.getElementById("buy_form");
@@ -456,6 +438,7 @@ window.onload = function e() {
 	}
 	
 	function main() {
+		displayPopUp(clickedItemID);
 		var e = document.getElementById("lowest");
 		var r = document.getElementById("highest");
 	

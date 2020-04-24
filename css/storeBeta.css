@@ -23,7 +23,7 @@
  .content {
 	width: 90%;
   	display: grid;
-  	grid-template-areas: "a a a a";
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
   	grid-gap: 15px;
   	grid-auto-rows: 330px;
 }
@@ -564,3 +564,7 @@ body {
 	background-color: rgba(0,0,0,0.45);
 }
 
+.items #invis {
+	box-shadow: none;
+	z-index: -1000;
+}

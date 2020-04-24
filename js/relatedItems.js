@@ -45,6 +45,12 @@ window.onclick = function() {
 	}
 }
 
+var buyButton = document.getElementsByClassName("item-price");
+
+buyButton.onclick = function() {
+	console.log("CLICK!");
+}
+
 function randomInt(max) {
 	var random = Math.floor(Math.random() * Math.floor(max));
 	if ((random >= max)) {
