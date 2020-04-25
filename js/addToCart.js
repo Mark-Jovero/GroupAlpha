@@ -8,6 +8,7 @@ window.onmousemove = function() {
 	var addToCart = document.getElementsByClassName("cart_table");
 	var subtotal = document.getElementsByClassName("subtotal");
 	var item_display_overlay = document.getElementById("popupCover");
+	var item_display = document.getElementById("itemInfoPopUp");
 	
 
 	
@@ -38,9 +39,10 @@ window.onmousemove = function() {
 			subtotal[0].innerHTML = "Subtotal: $<b>" + trimmedInt + "</b>";
 			cartItemCounter[0].innerHTML =  totalCartItems;
 			itemAdded[0].style.zIndex = "900000";
-			item_display_overlay.style.zIndex = "890000";
+			item_display.style.display = "none";
 			setTimeout(function(){
 				itemAdded[0].style.zIndex = "-10";	
+				item_display.style.display = "";
 			}, 1500);			
 
 		}

@@ -575,7 +575,7 @@ body {
 	height: 150px;
 	padding: 10px;
 	border-radius: 16px;
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.3);
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -595,6 +595,11 @@ body {
 	color: white;
 	font-size: 14px;
 	
+}
+
+.cart_content:hover .item_count, .cart:hover .item_count {
+	color: black;
+	z-index: 4000; 
 }
 
 #dispCol2 {
