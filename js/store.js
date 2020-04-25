@@ -198,6 +198,7 @@ window.onload = function e() {
 							dispCol1.style.overflowY = "scroll";
 						}
 						
+						
 						disableScrolling();
            			 });
        				 } 

@@ -21,7 +21,7 @@
 	border-bottom-right-radius: 4px;
 }
 
-.item_type .category:not(.category:last-child) {
+.item_type .category {
 	border-bottom: 0.2px solid white;
 }
 
