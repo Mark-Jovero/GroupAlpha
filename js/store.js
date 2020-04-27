@@ -18,6 +18,7 @@ var item_display_overlay;
 var item_display_content;
 var priceState = -1;
 var pl;
+var hoveredExport = 0;
 var clickedExport = 0;
 var data;
 var buyFormButton;
@@ -133,7 +134,7 @@ window.onload = function e() {
 				}
 					writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[i].src + "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[i].name + "</font></b><br>"
+					 + "<div class=\'item-name\'><b><font size=\'5\'>" + data[i].name + "</font></b><br>"
 					 + description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + itemPrice + "</div></div>"
 					 + "</div>";
@@ -234,7 +235,7 @@ window.onload = function e() {
 				}
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
+					 + "<div class=\'item-name\'><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
 					  + description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
@@ -331,7 +332,7 @@ window.onload = function e() {
 				}
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + data[i].keyID + "\'>"
 			 		 + "<img src=\'" + data[sorted[i]].src+ "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
+					 + "<div class=\'item-name\'><b><font size=\'5\'>" + data[sorted[i]].name + "</font></b><br>"
 						+ description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + data[sorted[i]].price + "</div></div>"
 					 + "</div>";
@@ -475,7 +476,18 @@ window.onload = function e() {
 			writeHere[0].innerHTML = "";
 			highestView();
 		}
+		
 	}
 	main();
 	
 };
+
+
+document.onmouseover = function() {
+	for (var t = 0; t < myDivs.length; t++) {
+		myDivs[t].addEventListener('mouseover', function() {
+			hoveredExport = storeData[this.id].keyID;
+			//console.log(storeData[hoveredExport].name);
+		});
+	}
+}
