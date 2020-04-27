@@ -14,7 +14,73 @@
 	grid-template-columns: 15% 5% 80%;
 }
 
+<<<<<<< Updated upstream
 .main > .fil {
+=======
+.main .items img {
+	width: 250px;
+	height: 130px;
+	margin-left: 8%;
+}
+
+ .content {
+	width: 90%;
+  	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-gap: 15px;
+  	grid-auto-rows: 330px;
+}
+
+.item-name {
+	position: relative;
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+	color: black;
+	bottom: 0;
+	background-color: white;
+}
+
+.item-name font:first-child {
+	font-size: 18px !important;
+}
+
+
+.item-name font:last-child:hover {
+	cursor: pointer;
+}
+
+.item-price-container {
+	position: absolute !important;
+	width: 100.05%;
+	height: 44px;
+	bottom: -1px;
+	background-color: green;
+}
+
+.item-price {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	top: 30%;
+	text-align: center;
+	color: white;
+	background-color: green;
+	padding-bottom: 0 !important;
+	font-weight: bold;
+}
+
+.items {
+	position: relative;
+	height: 233px;
+	width: 300px;
+	z-index: 0;
+	background-color: white;
+	box-shadow: -2px 5px 25px 3px rgba(0, 0, 0, 0.4);
+	transition: transform .1s ease-in-out, box-shadow 0.1s linear;
+>>>>>>> Stashed changes
 	
 }
 
