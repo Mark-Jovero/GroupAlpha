@@ -24,7 +24,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Whiteboard (11x8)",
-	"type" 		: 	"office supplies",
+	"type" 		: 	"office",
 	"desc"		:	"A whiteboard. 11 by 8 inches.",
 	"price" 	: 	10.99,
 	"src"		:	"items/11_8_board.png",
@@ -33,7 +33,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Whiteboard (48x36)",
-	"type" 		: 	"office supplies",
+	"type" 		: 	["office", "school"],
 	"desc"		:	"A big whiteboard. 48 by 36 inches.",
 	"price" 	: 	24.99,
 	"src"		:	"items/48_board.png",
@@ -42,7 +42,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Markers (8PC)",
-	"type" 		: 	"writing",
+	"type" 		: 	["writing", "art", "school"],
 	"desc"		:	"A pencil you can write with!",
 	"price" 	: 	8.99,
 	"src"		:	"items/markers.png",
@@ -51,7 +51,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Chalk White (2PC)",
-	"type" 		: 	"writing",
+	"type" 		: 	["art", "school"],
 	"desc"		:	"White chalk for wrtiting on blackboards or on the sidewalk. Item is dust-less.",
 	"price" 	: 	0.99,
 	"src"		:	"items/chalk.png",
@@ -60,7 +60,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Assorted Chalk (8PC)",
-	"type" 		: 	"writing",
+	"type" 		: 	["art", "school"],
 	"desc"		:	"Colorful set of chalk!",
 	"price" 	: 	4.99,
 	"src"		:	"items/assorted_chalk.png",
@@ -87,7 +87,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"College-Ruled Notebook",
-	"type" 		: 	"paper",
+	"type" 		: 	["paper", "writing"],
 	"desc"		:	"A single college-ruled notebook. 70 pages.",
 	"price" 	: 	0.49,
 	"src"		:	"items/collegenotebook.png",
@@ -105,7 +105,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Dry Erase Markers (24)",
-	"type" 		: 	"writing",
+	"type" 		: 	["writing", "school"],
 	"desc"		:	"Cheap markers! You can loose them and not worry because they are cheap!",
 	"price" 	: 	3.99,
 	"src"		:	"items/dry_erase_24.png",
@@ -150,7 +150,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Assorted Sharpie (12PC)",
-	"type" 		: 	"art",
+	"type" 		: 	["art", "writing"],
 	"desc"		:	"Colorful set of classical sharpies!",
 	"price" 	: 	12.99,
 	"src"		:	"items/sharpie_assorted.png",
@@ -159,7 +159,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Wide-Ruled Notebook",
-	"type" 		: 	"paper",
+	"type" 		: 	["paper", "school"],
 	"desc"		:	"Wide-ruled notebook. 70 pages.",
 	"price" 	: 	0.49,
 	"src"		:	"items/widenotebook.png",
@@ -168,7 +168,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Desk",
-	"type" 		: 	"furniture",
+	"type" 		: 	["office", "furniture"],
 	"desc"		:	"A wooden desk for students!",
 	"price" 	: 	89.99,
 	"src"		:	"items/empty.png",
@@ -193,5 +193,6 @@ var storeData = [
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	19
 	}
+	
 	
 ]

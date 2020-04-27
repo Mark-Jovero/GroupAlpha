@@ -2,6 +2,8 @@ var clickStatus = 1; // 1 = enable write; 0 = disable
 var MAX_DISPLAY_ITEMS = 4;
 var indexToDelete;
 var copyArr = [];
+var isArrayType = false;
+var type;
 window.onclick = function ds() {
 	var clickedItem = data[clickedExport];
 	var writeHere = document.getElementById("dispCol2");
@@ -35,14 +37,65 @@ window.onclick = function ds() {
 		clickStatus = 0;
 	}
 	
-	function getSimilarItems(clicked) {
+function getSimilarItems(clicked) {
 		var array = [];
-		for (var i = 0; i < data.length; i++) {
-			var item = data[i];
-			if (item.type == clicked.type && item.keyID != clicked.keyID) {
-				array.push(data[i].keyID);
+		var clickedType = clicked.type;
+		isArrayType = Array.isArray(clickedType);
+		
+		if (isArrayType) {
+			for (var i = 0; i < clickedType.length; i++) {
+				clickedType[i] = clickedType[i].substr(0,1).toUpperCase() + clickedType[i].substr(1, clickedType[i].length).toLowerCase();
+				//console.log(clickedType[i]);
+				for (var j = 0; j < storeData.length; j++) {
+					isArrayType = Array.isArray(storeData[j].type);
+					if (isArrayType) {
+						for (var l = 0; l < storeData[j].type.length; l++) {
+							var storeTypes = storeData[j].type[l].substr(0,1).toUpperCase() + storeData[j].type[l].substr(1, storeData[j].type[l].length).toLowerCase();
+							for (var t = 0; t < clickedType.length; t++) {
+								if (clickedType[t] == storeTypes && !array.includes(storeData[j].keyID) && clicked.keyID != storeData[j].keyID) {
+									array.push(storeData[j].keyID);
+								}
+							}
+						}
+					} else {
+							var storeTypes = storeData[j].type.substr(0,1).toUpperCase() + storeData[j].type.substr(1, storeData[j].type.length).toLowerCase();
+							isArrayType = Array.isArray(clickedType);
+							if (isArrayType) {
+								for (var t = 0; t < clickedType.length; t++) {
+									if (clickedType[t] == storeTypes &&  !array.includes(storeData[j].keyID)) {
+										array.push(storeData[j].keyID);
+									}
+								}
+							} else {
+								if (clickedType == storeTypes) {
+									array.push(storeData[j].keyID);
+								}	
+							}
+					}
+				}
+			}
+		} else {
+			clickedType = clickedType.substr(0,1).toUpperCase() + clickedType.substr(1, clickedType.length).toLowerCase();
+			for (var j = 0; j < storeData.length; j++) {
+				isArrayType = Array.isArray(storeData[j].type);
+				if (isArrayType) {
+					for (var l = 0; l < storeData[j].type.length;l++) {
+						var storeTypes = storeData[j].type[l].substr(0,1).toUpperCase() + storeData[j].type[l].substr(1, storeData[j].type[l].length).toLowerCase();
+						if (clickedType == storeTypes && !array.includes(storeData[j].keyID) && clicked.keyID != storeData[j].keyID) {
+							array.push(storeData[j].keyID);
+						}
+					}
+					
+				} else {
+					var storeTypes = storeData[j].type.substr(0,1).toUpperCase() + storeData[j].type.substr(1, storeData[j].type.length).toLowerCase();
+					if (clickedType == storeTypes && !array.includes(storeData[j].keyID) && clicked.keyID != storeData[j].keyID) {
+							array.push(storeData[j].keyID);
+					}
+				}
 			}
 		}
+
+		console.log("SIMILAR: "  + array);
 		return array;
 	
 	}
@@ -52,7 +105,7 @@ function testFunc(m) {
 	var writeHere = document.getElementById("dispCol2");
 	var writeHere2 = document.getElementById("dispCol1");
 	//swaps
-
+	console.log("!!");
 	
 	var index = parseInt(m.id.substring(4,5))-1;
 	if (index == 3){
