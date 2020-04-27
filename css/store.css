@@ -1,10 +1,10 @@
 
-@media screen and (min-width: 1201px) and (max-width: 1300px) {
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
  .content {
 		width: 90%;
   		display: grid;
   		grid-template-columns: 1fr 1fr 1fr !important;	
-  		grid-auto-rows: 220px !important;
+  		grid-auto-rows: 240px !important;
 	}
 
 
@@ -18,7 +18,7 @@
   		display: grid;
   		grid-template-columns: 1fr 1fr 1fr !important;
   		padding: 0px !important;
-  		grid-auto-rows: 240px !important;
+  		grid-auto-rows: 210px !important;
   		padding: 0px !important;
 		margin-left: 4px;
 	}
@@ -38,10 +38,29 @@
 		bottom: -40px !important;
 		background-color: green;
 	}
+	.item_count {
+		right: 1% !important;
+	
+	}
 }
 
-
-
+@media screen and (min-width: 400px) and (max-width: 999px) {
+	.main {
+		grid-template-columns: 0% 100% !important;
+	}
+	.content {
+		width: 90%;
+  		display: grid;
+  		grid-template-columns: 1fr 1fr !important;
+  		padding: 0px !important;
+  		grid-auto-rows: 240px !important;
+  		padding: 0px !important;
+		margin-left: 4px;
+	}
+	.sort img {
+		display: none !important;
+	}
+}
 .container_grid {
 	grid-template-areas:
 	'header header header header header header header top-right top-right top-right top-right top-right'
@@ -137,6 +156,10 @@
 	transform: scale(1.015);
 	z-index: 1;
 	cursor: default;
+}
+
+.items:hover .item-price-container {
+	box-shadow: 0px 8px 25px -12px rgba(0, 0, 0, 0.6) !important; 
 }
 
 #longDescButton:hover {
@@ -386,7 +409,7 @@
 	padding-top: 5px;
 	width: 30px;
 	z-index: 100;
-	right: 10%;
+	right: 5%;
 	text-align: center;
 	height: 100%;
 	font-weight: bold;
