@@ -102,6 +102,8 @@
 	height: 44px;
 	bottom: -1px;
 	background-color: green;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 .item-price {
@@ -121,6 +123,7 @@
 	height: 233px;
 	width: 300px;
 	z-index: 0;
+	border-radius: 3px;
 	margin: 5px;
 	background-color: white;
 	box-shadow: -2px 5px 25px 3px rgba(0, 0, 0, 0.4);

@@ -31,6 +31,15 @@
 	grid-area: item4;
 }
 
+#dispCol2 > div > div {
+	border-bottom-left-radius: 3px;
+ 	border-bottom-right-radius: 3px;
+}
+
+ #dispCol2 > div {
+ 	border-radius: 3px;
+ }
+
 #dispCol2 img {
 position: relative;
 	margin-left: 0px;
@@ -54,6 +63,7 @@ position: relative;
 	bottom: 0;
 	color: white;
 }
+
 
 #item-name:hover {
 	background-color: #B4B7C6 !important;
