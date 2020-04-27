@@ -57,7 +57,7 @@ function getClass(m) {
 			itemsDisplayed++;
 			writeHere[0].innerHTML += "<div class=\'items\' id=\'" + storeData[i].keyID + "\' onclick=\'test(this.id)\'>"
 			 		 + "<img src=\'" + storeData[i].src + "\'/>"
-					 + "<div class=\'item-name\'><hr><b><font size=\'5\'>" + storeData[i].name + "</font></b><br>"
+					 + "<div class=\'item-name\'><b><font size=\'5\'>" + storeData[i].name + "</font></b><br>"
 					 + description + "</div>"
 					 + "<div class=\'item-price-container\'><div class=\'item-price\'> $" + storeData[i].price + "</div></div>"
 					 + "</div>";
