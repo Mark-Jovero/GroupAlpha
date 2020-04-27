@@ -192,6 +192,204 @@ var storeData = [
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	19
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	20
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	21
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	22
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	23
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	24
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	25
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	26
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	27
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	28
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	29
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	30
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	31
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	32
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	33
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	34
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	35
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	36
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	37
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	38
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	39
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	40
+	},
+	{
+	"name" 		: 	"Google Chromebook",
+	"type" 		: 	"computer",
+	"desc"		:	"A premium laptop made by Google!",
+	"price" 	: 	989.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	41
 	}
 	
 ]

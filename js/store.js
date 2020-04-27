@@ -9,7 +9,7 @@ var highest = document.getElementById("highest");
 var lowest = document.getElementById("lowest");
 var priceDivSort = document.getElementsByClassName("price");
 var myDivs = document.getElementsByClassName('items');
-var ITEMS_PER_PAGE = 16;
+var ITEMS_PER_PAGE = 20;
 var nameValue = 0;
 var dispCol1 = document.getElementById("dispCol1");
 var item_x_display;
