@@ -53,7 +53,7 @@ A website that sells office supplies!
 "name"  :   "item name",
 "type"  :   "item classification", // groups items together.
 //Used for displaying "Related Items". 
-//Can be an array of multiple categories. IE ["office", "chair", "school"],
+//Can be an array of multiple types. IE ["office", "chair", "school"],
 "desc"  :   "description of the item", // Automatically displays this in the store page.
 "price" :   integer/double/float, // no quotation marks
 "src"   :   "items/____.png", // Source of image. Preferabbly on a white or transparent background.
