@@ -174,6 +174,15 @@ var storeData = [
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	17
+	},
+	{
+	"name" 		: 	"Highlighter (2PC)",
+	"type" 		: 	["office", "school"],
+	"desc"		:	"A neon highlighter",
+	"price" 	: 	1.99,
+	"src"		:	"items/empty.png",
+	"page"		:	"productPage/pencil.html",
+	"keyID"		:	18
 	}
 	
 	
