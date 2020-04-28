@@ -118,7 +118,6 @@ document.addEventListener('mousemove', function() {
   	 
   	 item_display_overlay.onmouseover = function() {
 		nameValue = document.getElementById("quantity").value;
-		console.log("NameValue: " + nameValue);
 		if (nameValue <= 0) {
 			buyFormButton[0].style.backgroundColor = "gray";
 			buyFormButton[0].style.color = "black";
@@ -131,6 +130,4 @@ document.addEventListener('mousemove', function() {
 			buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
 		}
 	}
- //  if (nameValue > 0) {
-  // }
 }, false);
