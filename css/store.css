@@ -96,8 +96,13 @@
 	grid-template-areas:
 	'header header header header header header header top-right top-right top-right top-right top-right'
 	'menu menu menu menu menu menu menu menu menu menu menu menu'
+	'carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel carousel'
 	'gap-left main main main main main main main main main main gap-right '
 	'footer footer footer footer footer footer footer footer footer footer footer footer' !important;
+}
+
+.carousel_container {
+	grid-area: carousel;
 }
 
 .main {
@@ -106,6 +111,7 @@
 	display: grid;
 	grid-template-columns: 15% 85%;
 	margin-bottom: 20px;
+	padding-top: 35px;
 }
 
 .main .items img {
