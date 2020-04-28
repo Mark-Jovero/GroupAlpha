@@ -51,13 +51,20 @@
 }
 
 .top-right > .cart  > .icon_nohover {
+	position: relative;
 	display: block;
 	margin-left: auto;
   	margin-right: auto;
+  	animation: cartReturn 1s;
+  	-webkit-animation-fill-mode: none;
+  	
 }
 
 .top-right > .cart > .icon_hover {
+	position: relative;
 	display: none;
+	animation: cartReturn 1s;
+
 }
 
 .top-right > .cart:hover > .icon_hover {

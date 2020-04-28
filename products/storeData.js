@@ -87,7 +87,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"College-Ruled Notebook",
-	"type" 		: 	["paper", "writing"],
+	"type" 		: 	["paper", "writing", "school"],
 	"desc"		:	"A single college-ruled notebook. 70 pages.",
 	"price" 	: 	0.49,
 	"src"		:	"items/collegenotebook.png",
