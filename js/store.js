@@ -439,7 +439,7 @@ window.onload = function e() {
 	}
 	
 	function main() {
-		
+		nameValue = 0
 		var e = document.getElementById("lowest");
 		var r = document.getElementById("highest");
 	

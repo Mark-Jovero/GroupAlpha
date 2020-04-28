@@ -4,6 +4,8 @@ var colorOn = "#676e89";
 var type;
 var isArrayType = false;
 var firstTimeLoad = true;
+var nameValue;
+var buyFormButton;
 function loadTypes() {
 	for (var i = 0; i < storeData.length; i++) {
 		isArrayType = Array.isArray(storeData[i].type);
@@ -90,6 +92,8 @@ function test(m) {
 	+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";
 
 	item_display_overlay.style.display = "block";
+	nameValue = document.getElementById("quantity").value;
+	buyFormButton = document.getElementsByClassName("item-price");
 }
 
 function resetView() {
@@ -104,9 +108,29 @@ function clearView() {
 }
 
 document.addEventListener('mousemove', function() {
+	
+
 	if (firstTimeLoad == true) {
 		loadTypes();
    		displayTypes();
    		firstTimeLoad = false;
-   }
+  	 }
+  	 
+  	 item_display_overlay.onmouseover = function() {
+		nameValue = document.getElementById("quantity").value;
+		console.log("NameValue: " + nameValue);
+		if (nameValue <= 0) {
+			buyFormButton[0].style.backgroundColor = "gray";
+			buyFormButton[0].style.color = "black";
+			buyFormButton[0].style.cursor = "not-allowed";
+			buyFormButton[0].style.boxShadow = "none";
+		} else {
+			buyFormButton[0].style.backgroundColor = "#8288a1";
+			buyFormButton[0].style.color = "white";
+			buyFormButton[0].style.cursor = "pointer";
+			buyFormButton[0].style.boxShadow = "0 1px 5px 0px rgba(0, 0, 0, 0.5)";
+		}
+	}
+ //  if (nameValue > 0) {
+  // }
 }, false);

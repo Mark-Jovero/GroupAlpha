@@ -24,7 +24,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Whiteboard (11x8)",
-	"type" 		: 	"office",
+	"type" 		: 	["office", "school"],
 	"desc"		:	"A whiteboard. 11 by 8 inches.",
 	"price" 	: 	10.99,
 	"src"		:	"items/11_8_board.png",
@@ -105,7 +105,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Dry Erase Markers (24)",
-	"type" 		: 	["writing", "school"],
+	"type" 		: 	["writing", "school", "office"],
 	"desc"		:	"Cheap markers! You can loose them and not worry because they are cheap!",
 	"price" 	: 	3.99,
 	"src"		:	"items/dry_erase_24.png",
@@ -184,6 +184,5 @@ var storeData = [
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	18
 	}
-	
 	
 ]
