@@ -174,24 +174,6 @@ var storeData = [
 	"src"		:	"items/empty.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	17
-	},
-	{
-	"name" 		: 	"HP Laptop DV5",
-	"type" 		: 	"computers",
-	"desc"		:	"3GHz quad-core laptop with a 15 inch screen, integrated graphics, 500GB HDD, and 16GB memory.",
-	"price" 	: 	729.99,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	18
-	},
-	{
-	"name" 		: 	"Google Chromebook",
-	"type" 		: 	"computers",
-	"desc"		:	"A premium laptop made by Google!",
-	"price" 	: 	989.99,
-	"src"		:	"items/empty.png",
-	"page"		:	"productPage/pencil.html",
-	"keyID"		:	19
 	}
 	
 	
