@@ -388,7 +388,8 @@
 	margin-left: 20px;
 	border-right: 1.5px solid black;
 	padding-right: 20px;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: none;
 }
 
 #dispCol1 .item-price{
