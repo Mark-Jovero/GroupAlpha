@@ -190,11 +190,6 @@
 	cursor: default;
 }
 
-.items:hover > img {
-	transform: scale(1.08);
-	transition: transform .1s linear;
-}
-
 .items > img {
 	transition: transform .2s ease-out;
 }
