@@ -171,16 +171,16 @@ var storeData = [
 	"type" 		: 	["office", "furniture"],
 	"desc"		:	"A wooden desk for students!",
 	"price" 	: 	89.99,
-	"src"		:	"items/empty.png",
+	"src"		:	"items/desk.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	17
 	},
 	{
-	"name" 		: 	"Highlighter (2PC)",
+	"name" 		: 	"Highlighter (8PC)",
 	"type" 		: 	["office", "school"],
 	"desc"		:	"A neon highlighter",
-	"price" 	: 	1.99,
-	"src"		:	"items/empty.png",
+	"price" 	: 	12.94,
+	"src"		:	"items/Stabilo-Boss-Original-Highlighter.png",
 	"page"		:	"productPage/pencil.html",
 	"keyID"		:	18
 	}
