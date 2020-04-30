@@ -3,6 +3,7 @@ var totalCartPrice = 0;
 var cartData = [];
 var nameValue = parseInt(nameValue);
 var cartStatus = 0;
+var itemArray=[];
 window.onmousemove = function() {
 	var itemAdded = document.getElementsByClassName("itemAdded");
 	var buyFormButton = document.getElementsByClassName("item-price");
@@ -48,8 +49,13 @@ window.onmousemove = function() {
 			setTimeout(function(){
 				itemAdded[0].style.zIndex = "-10";	
 				item_display.style.display = "";
-			}, 1500);			
+			}, 1000);			
+			
+			itemArray.push([clickedExport,nameValue]);
 		}
+		console.log(itemArray);
+		localStorage.setItem("cartData",JSON.stringify(itemArray));
+		
 	}
 	
 }
