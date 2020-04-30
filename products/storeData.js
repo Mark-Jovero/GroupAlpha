@@ -167,7 +167,7 @@ var storeData = [
 	},
 	{
 	"name" 		: 	"Genovo X4",
-	"type" 		: 	["Computers", "tablets"],
+	"type" 		: 	["Computers"],
 	"desc"		:	"A versatile laptop! Great for gaming and school."+
 						"<br><b>Specs:</b><ul>"+
 						"<li>Intel Core i5</li>" +
