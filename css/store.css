@@ -305,6 +305,7 @@
 	background-color: #aeb2c2;
 	cursor: pointer;
 	font-size: 20px;
+	padding-top: 2px;
 	transition: background-color .2s ease;
 }
 
@@ -331,6 +332,11 @@
 .sort .dropdown1:hover {
 	background-color: #9196ac;
 	color: white;
+}
+
+.p_container {
+	position: relative;
+	top: -4px;
 }
 
 .caution {
