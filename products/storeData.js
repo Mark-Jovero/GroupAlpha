@@ -204,7 +204,7 @@ var storeData = [
 	"price" 	: 	149.99,
 	"src"		:	"items/samsungtabA10.png",
 	"keyID"		:	22
-	}\
+	}
 ]
 
 /*
