@@ -178,6 +178,7 @@
 	background-color: white;
 	box-shadow: -2px 5px 25px 3px rgba(0, 0, 0, 0.4);
 	transition: transform .1s ease-in-out, box-shadow 0.1s linear;
+	overflow: hidden;
 	
 }
 
@@ -187,6 +188,15 @@
 	transform: scale(1.015);
 	z-index: 1;
 	cursor: default;
+}
+
+.items:hover > img {
+	transform: scale(1.08);
+	transition: transform .1s linear;
+}
+
+.items > img {
+	transition: transform .2s ease-out;
 }
 
 .items:hover .item-price-container {
@@ -372,6 +382,7 @@
 	margin-left: 20px;
 	border-right: 1.5px solid black;
 	padding-right: 20px;
+	overflow: scroll;
 }
 
 #dispCol1 .item-price{
