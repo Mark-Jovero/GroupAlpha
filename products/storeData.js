@@ -4,7 +4,7 @@
 
 function displayPopUp(itemID) {
 	item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + storeData[itemID].src
-		+ "\'><br><b> <h1>" + storeData[itemID].name
+		+ "\'><hr><br><b> <h1>" + storeData[itemID].name
 		+ "</b></h1>" + storeData[itemID].desc
 		+ "<br><b> Price: $" + storeData[itemID].price  
 		+ "</b><br><br><div id=\'buy_form\'><form>" + 
