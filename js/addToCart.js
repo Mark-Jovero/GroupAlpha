@@ -16,7 +16,6 @@ window.onmousemove = function() {
 		addToCart[0].innerHTML = "<thead><tr><th></th><th id=\'thead-name\'>Item</th><th>Price</th><th></th><th>Q</th><tr></thead>";
 		cartStatus++;
 	}
-
 	
 	buyFormButton[0].onmouseout = function() {
 		if (buyFormButton[0].innerText == "Add To Cart") {
@@ -50,7 +49,7 @@ window.onmousemove = function() {
 				itemAdded[0].style.zIndex = "-10";	
 				item_display.style.display = "";
 			}, 1500);			
-
 		}
 	}
+	
 }

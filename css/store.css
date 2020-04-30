@@ -463,6 +463,14 @@
 	
 }
 
+.icon_hover:hover, .icon_nohover:hover {
+	transform: rotate(-15deg);
+}
+
+.icon_hover, .icon_nohover {
+	transition: transform 0.5s ease;
+}
+
 .cart_content:hover .item_count, .cart:hover .item_count {
 	color: black;
 	z-index: 4000; 

@@ -120,7 +120,7 @@ function testFunc(m) {
 	console.log(index);
 	clickedExport = storeData[copyArr[index]].keyID;
 	writeHere2.innerHTML = "<div id=\'\'><img src=\'" + storeData[clickedExport].src
-		+ "\'><br><b> <h1>" + storeData[clickedExport].name
+		+ "\'><hr><br><b> <h1>" + storeData[clickedExport].name
 		+ "</b></h1>" + storeData[clickedExport].desc
 		+ "<br><b> Price: $" + storeData[clickedExport].price  
 		+ "</b><br><br><div id=\'buy_form\'><form>" + 
