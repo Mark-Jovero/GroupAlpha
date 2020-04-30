@@ -1,6 +1,8 @@
 var totalCartItems = 0;
 var totalCartPrice = 0;
 var cartData = [];
+var nameValue = parseInt(nameValue);
+var cartStatus = 0;
 window.onmousemove = function() {
 	var itemAdded = document.getElementsByClassName("itemAdded");
 	var buyFormButton = document.getElementsByClassName("item-price");
@@ -10,6 +12,10 @@ window.onmousemove = function() {
 	var item_display_overlay = document.getElementById("popupCover");
 	var item_display = document.getElementById("itemInfoPopUp");
 	
+	if (nameValue > 0 && cartStatus == 0) {
+		addToCart[0].innerHTML = "<thead><tr><th></th><th id=\'thead-name\'>Item</th><th>Price</th><th></th><th>Q</th><tr></thead>";
+		cartStatus++;
+	}
 
 	
 	buyFormButton[0].onmouseout = function() {
@@ -30,7 +36,7 @@ window.onmousemove = function() {
 		
 				addToCart[0].innerHTML += "<tr><td class=\'cart_image\'><img src=\'" + storeData[clickedExport].src + "\' class=\'cart_img\'></td><td class=\'item_name\'>"
 					 + storeData[clickedExport].name + "</td>" + 
-					 "<td>$" + storeData[clickedExport].price + "</td><td>" + " x (" + nameValue + ")</td>"+ "</tr>";
+					 "<td>$" + storeData[clickedExport].price + " </td><td> x </td><td>" + " " + nameValue + "</td>"+ "</tr>";
 			
 			totalCartPrice += storeData[clickedExport].price * nameValue;
 			totalCartItems += nameValue;

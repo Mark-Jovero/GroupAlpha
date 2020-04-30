@@ -485,6 +485,33 @@
 	cursor: pointer;
 }
 
+.cart_table {
+	border-left: none;
+	width: 100%;
+	border-right: none;
+	border-top: none;
+	border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.cart_table th {
+	padding-bottom: 10px;
+	border-bottom: 1px solid silver;
+}
+
+.cart_table td {
+	padding-top: 5px;
+}
+
+.cart_table:last-child {
+	border-bottom: 1px solid silver;
+}
+
+.cart_table #thead-name {
+	width: 150px;
+}
+
 * {
 	transition: background-color .2s ease;
 }
