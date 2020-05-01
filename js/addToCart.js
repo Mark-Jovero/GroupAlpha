@@ -55,6 +55,7 @@ window.onmousemove = function() {
 		}
 		console.log(itemArray);
 		localStorage.setItem("cartData",JSON.stringify(itemArray));
+		localStorage.setItem("cartTotal", trimmedInt);
 		
 	}
 	

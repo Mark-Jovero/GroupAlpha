@@ -7,11 +7,11 @@
 	<link href="css/cartPage.css" rel="stylesheet" type="text/css">
 	<link href="css/pages.css" rel="stylesheet" type="text/css">
 	<link href="css/pageCSS/index.css" rel="stylesheet" type="text/css">
-	<link href="css/carousel.css" rel="stylesheet" type="text/css">
 	<link href="css/stylization.css" rel="stylesheet" type="text/css">
+	<script src="products/storeData.js"></script>
 	
 </head>
-<body>
+<body onload="">
 
 	<div class="container_grid">
 		
@@ -25,13 +25,11 @@
 					<div class="cart_content">
 						<br><span><b>Your Cart</b></span><br>
 						<hr>
-						<p><img class="item" src="products/items/markers.png"></p>
-						<p>Markers - 4.99</p>
-						<p><img class="item" src="products/items/premium_pencil_6.png"></p>
-						<p>Premium Pencils - 4.99</p>
-						<br><br>
+						<div class="cart_items"><table class="cart_table"><tr><td>Your Cart is Empty!<br><br></td></tr></table></div>
+						<br>
+						<div class="subtotal"></div>
 						<form>
-							<button type="submit" formaction="cart.html"> Checkout </button>
+							<button type="submit" formaction="../cart.html"> Checkout </button>
 						</form>
 					</div>
 					
@@ -54,20 +52,15 @@
 					<td><h1 class="title-font">Summary</h1></td>
 				</tr>
 				<tr>
-					<td style="border-right: 1px solid black;"><b>
-					
-						<p><img height="90px" class="item" src="products/items/markers.png"></p>
-						<p>Markers - 4.99</p>
-						<p><img height="90px" class="item" src="products/items/premium_pencil_6.png"></p>
-						<p>Premium Pencils - 4.99</p>
-					
+					<td style="border-right: 1px solid black;"><b class="cartImage">
+						
 					</b></td>
 					<td>
 						<table class="sumInfo">
-							<tr><td><b>Subtotal</b></td><td><b>$9.98</b></td></tr>
-							<tr><td><b>Shipping & Handling</b></td><td><b>$2.99</b></td></tr>
-							<tr><td><b>Tax</b></td><td><b>$0.92</b></td></tr>
-							<tr><td><b>Total</b></td><td><b>$13.89</b></td></tr>
+							<tr><td><b>Subtotal</b></td><td class="subtotalCart"></td></tr>
+							<tr><td><b>Shipping & Handling</b></td><td><b>$7.99</b></td></tr>
+							<tr><td><b>Tax</b></td><td><b>$2.92</b></td></tr>
+							<tr><td><b>Total</b></td><td class="fulltotalCart"></td></tr>
 							<tr>
 								<td></td>
 								<td>
@@ -118,8 +111,20 @@
 	
 	</div>
 	<script>
-		localStorage.getItem()
+		localStorage.getItem("cartData");
+		var totalCart = localStorage.getItem("cartTotal");
+		var dataItems = JSON.parse(localStorage.getItem("cartData"));
+		var fullAmount = JSON.parse(localStorage.getItem("cartTotal")) + 7.99 + 2.92;
+		console.log(fullAmount);
+		
+		document.querySelector(".subtotalCart").innerHTML = "<b>$" + totalCart +"</b>";
+		document.querySelector(".fulltotalCart").innerHTML = "<b>$" + fullAmount.toFixed(2) +"</b>";
+		
+		for(i = 0; i < dataItems.length; i++ ){
+			document.querySelector(".cartImage").innerHTML +="<p><img src=\'products/" + storeData[dataItems[i][0]].src + "\' height=\"90px\" class=\"cartImg item\"></p>" 
+				+"<p>" + storeData[dataItems[i][0]].name + "</p>"
+				+"<p> Quantity: " + dataItems[i][1] + "</p>";
+		}
 	</script>
-
 </body>
 </html>
