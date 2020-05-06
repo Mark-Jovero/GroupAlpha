@@ -3,10 +3,11 @@
 //
 
 function displayPopUp(itemID) {
-	item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + storeData[itemID].src
-		+ "\'><hr><br><b> <h1>" + storeData[itemID].name
-		+ "</b></h1>" + storeData[itemID].desc
-		+ "<br><b> Price: $" + storeData[itemID].price  
+	item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + storeData[clickedExport].src
+		+"\'><hr>"+ 	"<font size=\'2\'>Category: " + storeData[clickedExport].type + "</font>"
+		+ "<br><b> <h1>" + storeData[clickedExport].name
+		+ "</b></h1>" + storeData[clickedExport].desc
+		+ "<br><b> Price: $" + storeData[clickedExport].price   
 		+ "</b><br><br><div id=\'buy_form\'><form>" + 
 		"<label for=\'quantity\'>Quantity</label><input type=\'number\' min=\'0\' max=\'100\' value=\'0\' id=\'quantity\' name=\'quantity\' onkeypress=\'return event.keyCode != 13;\'></form></div>"//disables enter input
 	+	"<div class=\'item-price\'>Add To Cart</div></div><div id=\'dispCol2\'></b><div>";

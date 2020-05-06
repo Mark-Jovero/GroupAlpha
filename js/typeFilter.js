@@ -84,7 +84,8 @@ function getTypeItems(category) {
 function test(m) {
 	clickedExport = m;
 	item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + storeData[clickedExport].src
-		+ "\'><br><b> <h1>" + storeData[clickedExport].name
+		+"\'><hr>"+ 	"<font size=\'2\'>Category: " + storeData[clickedExport].type + "</font>"
+		+ "<br><b> <h1>" + storeData[clickedExport].name
 		+ "</b></h1>" + storeData[clickedExport].desc
 		+ "<br><b> Price: $" + storeData[clickedExport].price  
 		+ "</b><br><br><div id=\'buy_form\'><form>" + 

@@ -105,7 +105,6 @@ function testFunc(m) {
 	var writeHere = document.getElementById("dispCol2");
 	var writeHere2 = document.getElementById("dispCol1");
 	//swaps
-	console.log("!!");
 	
 	var index = parseInt(m.id.substring(4,5))-1;
 	if (index == 3){
@@ -119,8 +118,9 @@ function testFunc(m) {
 	}
 	console.log(index);
 	clickedExport = storeData[copyArr[index]].keyID;
-	writeHere2.innerHTML = "<div id=\'\'><img src=\'" + storeData[clickedExport].src
-		+ "\'><hr><br><b> <h1>" + storeData[clickedExport].name
+	writeHere2.innerHTML = "<div><img src=\'" + storeData[clickedExport].src
+		+"\'><hr>"+ 	"<font size=\'2\'>Category: " + storeData[clickedExport].type + "</font>"
+		+ "<br><b> <h1>" + storeData[clickedExport].name
 		+ "</b></h1>" + storeData[clickedExport].desc
 		+ "<br><b> Price: $" + storeData[clickedExport].price  
 		+ "</b><br><br><div id=\'buy_form\'><form>" + 
