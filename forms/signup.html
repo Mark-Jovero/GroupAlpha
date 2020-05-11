@@ -48,10 +48,12 @@
                 <p class="text-font">Please fill in this form to create an account.</p>
                 <div class="login-page">
                   <div class="form">
-                    <form class="register-form" action="/my-handling-form-page" method="post">
-                      <input type="text" id="name" placeholder="name"/>
-                      <input type="text" id="mail" placeholder="email address"/>
-                      <input type="password" id="pass" placeholder="password"/>
+                    <form class="register-form" action="../php/createAccount.php" method="post">
+                      <input type="text" id="firstname" placeholder="First Name" name="firstName"/>
+		      <input type="text" id="lastname" placeholder="Last Name" name="lastName"/>
+                      <input type="text" id="mail" placeholder="Email Address" name="email"/>
+                      <input type="password" id="pass" placeholder="Password"/>
+		      <input type="password" id="pass" placeholder="Confirm Password" name="password"/>
                       <button type = "submit">Sign Up</button>
                       <p class="text-font text-fontSmall">
                         <label>
