@@ -3,8 +3,28 @@
 //
 
 function displayPopUp(itemID) {
+	var catString = "";
+	var temp;
+	if (!Array.isArray(storeData[clickedExport].type)) {
+		temp = storeData[clickedExport].type.substr(0,1).toUpperCase() + storeData[clickedExport].type.substr(1, storeData[clickedExport].type.length).toLowerCase();
+		catString = temp + ".";
+		console.log(storeData[clickedExport].type.length);
+	} else {
+		for (var i = 0; i < storeData[clickedExport].type.length; i++) {
+			temp = storeData[clickedExport].type[i].substr(0,1).toUpperCase() + storeData[clickedExport].type[i].substr(1, storeData[clickedExport].type[i].length).toLowerCase();
+			if (i != storeData[clickedExport].type.length-1) {
+				if (storeData[clickedExport].type.length == 2) {
+					catString += temp + ", "
+				} else {
+					catString += temp + ", "
+				}
+			} else {
+				catString += temp + ".";
+			}
+		}
+	}
 	item_display_content.innerHTML = "<div id=\'dispCol1\'><img src=\'" + storeData[clickedExport].src
-		+"\'><hr>"+ 	"<font size=\'2\'>Category: " + storeData[clickedExport].type + "</font>"
+		+"\'><hr>"+ 	"<font size=\'2\'>Category: " + catString + "</font>"
 		+ "<br><b> <h1>" + storeData[clickedExport].name
 		+ "</b></h1>" + storeData[clickedExport].desc
 		+ "<br><b> Price: $" + storeData[clickedExport].price   
