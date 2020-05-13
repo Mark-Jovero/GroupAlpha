@@ -30,7 +30,14 @@ if ($conn->connect_error) {
 		$sts->close();
 		$conn->close();
 	} else {
-		header("Location: ../index.html");
+		$pagecontents = file_get_contents("../index.html");
+		$findString = "href=\"";
+		$replaceWith = "href=\"../";
+		$pagecontents2 = str_replace($findString, $replaceWith, $pagecontents);
+		$findString = "src=\"";
+		$replaceWith = "src=\"../";
+		$pagecontents2 = str_replace($findString, $replaceWith, $pagecontents);
+		echo $pagecontents2;
 		exit;
 	}
 }
