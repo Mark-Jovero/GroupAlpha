@@ -168,7 +168,7 @@
 	height: 20%;
 	top: 30%;
 	text-align: center;
-	color: white;
+	color: red;
 	background-color: green;
 	padding-bottom: 0 !important;
 	font-weight: bold;
@@ -398,7 +398,7 @@
 	margin-left: 30px;
 	background-color: gray;
 	height: 30px;
-	width: 100px;
+	width: 150px;
 	border-radius: 4px;
 	box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.09);
 	top: 10px;
