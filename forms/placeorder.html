@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+	<title>My Cart</title>
+	<link href="../css/outline.css" rel="stylesheet" type="text/css">
+	<link href="../css/cart.css" rel="stylesheet" type="text/css">
+	<link href="../css/cartPage.css" rel="stylesheet" type="text/css">
+	<link href="../css/pages.css" rel="stylesheet" type="text/css">
+	<link href="../css/pageCSS/index.css" rel="stylesheet" type="text/css">
+	<link href="../css/stylization.css" rel="stylesheet" type="text/css">
+	<link href="../css/cartCheckout.css" rel="stylesheet" type="text/css">
+	<script src="../products/storeData.js"></script>
+	<script src="../js/addToCart.js"></script>
+	<script src="../js/orderconf.js"></script>
+	
+</head>
+<body >
+
+	<div class="container_grid">
+		
+		<div class="top-right">
+			<div class="login"><a target="_parent" href="forms/login.html"><?php include '../php/loggedHandler.php' ?></a></div>
+			<div class="help"><a target="_parent" href="faq.html">Help</a></div>
+			<div class="cart"><div class="item_count"></div>
+					<img class="icon_hover" src="../images/cart_hover.png" alt="Cart" width="27px">
+					<img class="icon_nohover" src="../images/cart_NOhover.png" alt="nCart" width="27px" align="middle">
+					<div class="cart_content">
+						<br><span><b>Your Cart</b></span><br>
+						<hr>
+						<div class="cart_items"><table class="cart_table"></table></div>
+						<br>
+						<div class="subtotal"></div>
+						<form>
+							<button type="submit" formaction="../cart.html"> Checkout </button>
+						</form>
+					</div>
+					
+			</div>
+		</div>
+		
+		<div class="header"></div>
+		
+		<div class="menu"><iframe src="../frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe></div>
+	
+		<div class="gap-left">&nbsp;<br></div><!--Dont put any content here please-->
+	
+		<div class="main">
+			<div class="content">
+			
+			<!-- CONTENTS GO HERE! -->
+				<h1>Order Confirmation</h1><hr>
+				<p>Thank you for your order! Your items will ship within ONE business day. Your order will arrive within two weeks.</p>
+				<h2>Order Information</h2>
+				<div class="writeInfoHere">a</div>
+			<br><br><br><br><br><br><br>
+			<div class="center"><a href="../index.html"><div id="checkout_button">Return Home</div></a></div>
+			</div>
+			<div class="sidebar"></div>
+		</div>
+		
+		<div class="footer">
+		<br>
+			<iframe src="../frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+		</div>
+		
+		
+		<div class="gap-right">&nbsp;<br></div><!--Dont put any content here please-->
+	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Payment</title>
+        <link href="../css/outline.css" rel="stylesheet" type="text/css">
+      <link href="../css/cart.css" rel="stylesheet" type="text/css">
+      <link href="../css/pageCSS/index.css" rel="stylesheet" type="text/css">
+      <link href="../css/stylization.css" rel="stylesheet" type="text/css">
+      <link href="../css/forms.css" rel="stylesheet" type="text/css">
+      <script src="../js/cookies.js"></script>
+      <script src="js/addToCart.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="php/loggedHandler.js"></script>
+	<script src="products/storeData.js"></script>
+
+        
+    </head>
+    <body>
+        <div class="container_grid">
+		
+           <div class="top-right">
+			<div class="login"><a target="_parent" href="forms/login.html"><?php include '../php/loggedHandler.php' ?></a></div>
+			<div class="help"><a target="_parent" href="faq.html">Help</a></div>
+			<div class="cart"><div class="item_count"></div>
+					<img class="icon_hover" src="../images/cart_hover.png" alt="Cart" width="27px">
+					<img class="icon_nohover" src="../images/cart_NOhover.png" alt="nCart" width="27px" align="middle">
+					<div class="cart_content">
+						<br><span><b>Your Cart</b></span><br>
+						<hr>
+						<div class="cart_items"><table class="cart_table"></table></div>
+						<br>
+						<div class="subtotal"></div>
+						<form>
+							<button type="submit" formaction="../cart.html"> Checkout </button>
+						</form>
+					</div>
+					
+			</div>
+		</div>
+            
+            <div class="header"></div>
+            
+            <div class="menu"><iframe src="../frames/navbar.html" height="100%" width="100%" frameborder="0" scrolling="no" marginheight="5" marginwidth="5"></iframe></div>
+          
+            <div class="gap-left">&nbsp;<br></div><!--Dont put any content here please-->
+            <div class="main">
+              <center>
+                <table height="200px">
+                  <tr>
+                    <div class= "signinOptions"></div>
+                    <h1 class="title-font"> Enter Your Shipping Address </h1>
+                    <div class="login-page">
+                      <div class="form">
+                        <form class="register-form" action="/my-handling-form-page" method="post" onsubmit="saveCookies()">
+				<input id="fullname" name="fullname" placeholder = "Full Name"> 
+                        	<input id="Address" name="address" placeholder = "Address Line 1"> 
+ 				<input id="Address1" name="address2" placeholder = "Address Line 2"> 
+                        	<input id="City" name="City" placeholder = "City"> 
+                        	<input id="State" name="State" placeholder = "State"> 
+                            	<input type="number" id="Postal" name="user_postal" placeholder = "Postal Code">
+                            <button type = "submit" formaction = "paymentType.html">Place Order</button>
+           
+                          
+                        </form>
+                      </div>
+                    </div>
+                  </tr>
+                </table>
+              </center>
+            </div>
+              <div class="footer">
+                <br>
+                  <iframe src="../frames/footer.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+                </div>
+                
+                
+                <div class="gap-right">&nbsp;<br></div><!--Dont put any content here please-->
+            </div>
+       </body>
+</html>
