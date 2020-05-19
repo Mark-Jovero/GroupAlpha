@@ -1,6 +1,4 @@
 <?php 
-
-
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	$link = mysqli_connect('localhost', 'connection', 'student', 'NewLeaf');
@@ -9,11 +7,8 @@ $conn = new mysqli('localhost', 'connection', 'student', 'NewLeaf');
 if ($conn->connect_error) {
 	die('Error: ' .$conn->connect_error);
 } else {
-
-	$logged = FALSE;
 	//Check if email exists in database
 	$emailExists = FALSE;
-
 	$sql = "SELECT email FROM users";
 	if ($result = $conn -> query($sql)) {
  		while ($row = $result -> fetch_row()) {
@@ -30,33 +25,16 @@ if ($conn->connect_error) {
  		while ($row = $result -> fetch_row()) {
 
 			if ($password == $row[0]) {
-				$logged = TRUE;
-							
+				echo "Login successful!";			
 			} else {
-				header( "Location: ../forms/invlogin.html" );		
+				echo "Login information was invalid.";			
 			}
 
   		}
   	$result -> free_result();
-	} else {header( "Location: ../forms/invlogin.html" );	} // invalid
+	} else {echo "Login information was invalid.";	}
 
-	$sql = "SELECT firstName FROM users WHERE email='" . $email . "'";
-	$first = "";
-	if ($logged && $result = $conn -> query($sql)) {
- 		while ($row = $result -> fetch_row()) {
-
-			$first = $row[0];
-  		}
-  	$result -> free_result();
-	} 
-
-	$random = random_bytes(50);
-	$sql = "UPDATE users SET uniqueID='" . $random . "' WHERE email='" . $email . "'";
-	if ($logged == TRUE && $result = $conn -> query($sql)) {
-		setcookie("ui2d",$random,time()+1000320*3424,'/;samesite=none');
-		setcookie("name",$first,time()+1000320*3424,'/;samesite=none');
-		header( "Location: ../index.html" );
-	}
+	
 }
 
 ?>
