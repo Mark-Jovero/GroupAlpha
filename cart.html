@@ -8,26 +8,24 @@
 	<link href="css/pages.css" rel="stylesheet" type="text/css">
 	<link href="css/pageCSS/index.css" rel="stylesheet" type="text/css">
 	<link href="css/stylization.css" rel="stylesheet" type="text/css">
-	<link href="css/cartCheckout.css" rel="stylesheet" type="text/css">
 	<script src="products/storeData.js"></script>
-	<script src="js/addToCart.js"></script>
-	<script src="js/checkout.js"></script>
 	
 </head>
-<body  onload="test2()">
+<body onload="">
 
 	<div class="container_grid">
 		
 		<div class="top-right">
-			<div class="login"><a target="_parent" href="forms/login.html"><?php include 'php/loggedHandler.php' ?></a></div>
+			<div class="login"><a target="_parent" href="forms/login.html">Login</a></div>
 			<div class="help"><a target="_parent" href="faq.html">Help</a></div>
-			<div class="cart"><div class="item_count"></div>
+			<div class="cart">
+					
 					<img class="icon_hover" src="images/cart_hover.png" alt="Cart" width="27px">
 					<img class="icon_nohover" src="images/cart_NOhover.png" alt="nCart" width="27px" align="middle">
 					<div class="cart_content">
 						<br><span><b>Your Cart</b></span><br>
 						<hr>
-						<div class="cart_items"><table class="cart_table"></table></div>
+						<div class="cart_items"><table class="cart_table"><tr><td>Your Cart is Empty!<br><br></td></tr></table></div>
 						<br>
 						<div class="subtotal"></div>
 						<form>
@@ -48,12 +46,57 @@
 			<div class="content">
 			
 			<!-- CONTENTS GO HERE! -->
-				<h1>Your Cart</h1><hr>
-				<table id="cartTable">
-					<tr><td></td> <td class="font-big">Item</td> <td class="font-big">Quantity</td> <td class="font-big">Price</td></tr>
+			<table class="cartInfo">
+				<tr>
+					<td style="border-right: 1px solid black;"><h1 class="title-font">Cart</h1></td>
+					<td><h1 class="title-font">Summary</h1></td>
+				</tr>
+				<tr>
+					<td style="border-right: 1px solid black;"><b class="cartImage">
+						
+					</b></td>
+					<td>
+						<table class="sumInfo">
+							<tr><td><b>Subtotal</b></td><td class="subtotalCart"></td></tr>
+							<tr><td><b>Shipping & Handling</b></td><td><b>$7.99</b></td></tr>
+							<tr><td><b>Tax</b></td><td><b>$2.92</b></td></tr>
+							<tr><td><b>Total</b></td><td class="fulltotalCart"></td></tr>
+							<tr>
+								<td></td>
+								<td>
+									<br><br>
+									<form>
+										<button type="submit" formaction="forms/paymentType.html"> Checkout </button>
+									</form>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<div class=" title-padding">
+				<p class="title-font">Items You May Like</p>
+			</div>
+			<div class="flex-container trending">
+			
+				<table>
+					<tr>
+						<td>
+							<div class="item1 linkP"><a href="products/store.html"><img src="images/multicolored-markers.jpg" width="500px" height="350px"></a><br>
+							<a href="products/store.html"><p class="trending-link">Markers</p></a></div>
+						</td>
+						<td>
+							<div class="item2 linkP"><a href="products/store.html"><img src="images/black-notebook.jpg" width="500px" height="350px"></a><br>
+							<a href="products/store.html"><p class="trending-link">Notebooks</p></a></div>
+						</td>
+						<td>
+							<div class="item3 linkP"><a href="products/store.html"><img src="images/paint-swatches.jpg" width="500px" height="350px"></a><br>
+							<a href="products/store.html"><p class="trending-link">Paint Swatches</p></a></div>	
+						</td>
+					</tr>
 				</table>
-			<br><br><br><br><br><br><br>
-			<div class="center"><a href="forms/shipping.html"><div id="checkout_button">Checkout</div></a></div>
+			</div>
+			
 			</div>
 			<div class="sidebar"></div>
 		</div>
@@ -67,6 +110,21 @@
 		<div class="gap-right">&nbsp;<br></div><!--Dont put any content here please-->
 	
 	</div>
-	
+	<script>
+		localStorage.getItem("cartData");
+		var totalCart = localStorage.getItem("cartTotal");
+		var dataItems = JSON.parse(localStorage.getItem("cartData"));
+		var fullAmount = JSON.parse(localStorage.getItem("cartTotal")) + 7.99 + 2.92;
+		console.log(fullAmount);
+		
+		document.querySelector(".subtotalCart").innerHTML = "<b>$" + totalCart +"</b>";
+		document.querySelector(".fulltotalCart").innerHTML = "<b>$" + fullAmount.toFixed(2) +"</b>";
+		
+		for(i = 0; i < dataItems.length; i++ ){
+			document.querySelector(".cartImage").innerHTML +="<p><img src=\'products/" + storeData[dataItems[i][0]].src + "\' height=\"90px\" class=\"cartImg item\"></p>" 
+				+"<p>" + storeData[dataItems[i][0]].name + "</p>"
+				+"<p> Quantity: " + dataItems[i][1] + "</p>";
+		}
+	</script>
 </body>
 </html>
