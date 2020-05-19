@@ -3,6 +3,8 @@ AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH
 
 Public Website URL: **https://mark-jovero.github.io/GroupAlpha/**
 
+Please download the .ova file and import it into your VirtualBox. It is already set up to handle account registration and login.[Download Link](google.com)
+
 A website that sells office supplies!
 
 ## TODO [due APRIL 30th]
