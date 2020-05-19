@@ -3,15 +3,12 @@ AUTHORS: JESSICA ZEPEDA, MARK JOVERO, MEDHAT ELKHIESH
 
 Public Website URL: **https://mark-jovero.github.io/GroupAlpha/**
 
-Please download the .ova file and import it into your VirtualBox. It is already set up to handle account registration and login.[Download Link](google.com)
+The contents on GitHub may be outdated. Please download the .ova file and import it into your VirtualBox. It is already set up to handle account registration and login. [(Download Link)](tinyurl.com/CSC317Alpha)
 
 A website that sells office supplies!
 
-## TODO [due APRIL 30th]
-  - Create social media accounts
-  - Finish webpage contents (ie Privacy page)
-  - Work on a cart system
-  - Basic Login System
+## TODO [due MAY 19]
+  - Input validation for password/password confirm, email, etc.
 
 ## How to Access a Clicked Item's Data
   - You can access the item that a user has clicked. To do so, it is important that your html head has the following:
